@@ -1,0 +1,8 @@
+@function rem($px) {
+    @return ($px / 16) +rem;
+}
+
+@function adaptFont($px, $width) {
+    $pixelVal: (100/$width)*($px) + 0.001;
+    @return calc(1em + #{$pixelVal}vw);
+}

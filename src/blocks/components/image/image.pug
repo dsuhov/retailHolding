@@ -1,0 +1,5 @@
+mixin image(base_type, img_name, alt)
+  .image
+    picture.image__picture
+      source(type="image/webp" data-srcset=`img/general/${img_name}.webp`)
+      img(src="img/general/preloader.gif" data-srcset=`img/general/${img_name}.${base_type}` alt=""+alt).image__img.lazy-img-simple

@@ -1,0 +1,22 @@
+include ../../components/buttons/base-btn
+include ../header-card/header-card
+include ../header-card/headerCardData
+
+header.header.header-main.bg-img
+  .container
+    .header-main__top-line
+      .header-main__logo
+        include ../logo/logo
+      .header-main__controls
+        .header-main__menu
+          include ../menu/header-menu
+        .header-main__btn
+          +base-btn('40', 'Презентация компании', 'header-main-btn')
+        .header-main__phone
+          include ../header-phone/header-phone
+    .header-main__header-banner
+      include ../header-banner/header-banner
+    .header-main__cards
+      each item in headerCardData
+        .header-main__card
+          +header-card(item)

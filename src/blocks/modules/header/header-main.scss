@@ -1,0 +1,43 @@
+.header-main {
+  padding-bottom: 9.2rem;
+
+  &__top-line {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 6rem;
+  }
+
+  &__controls {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__header-banner {
+    margin-bottom: 6rem;
+  }
+
+  &__btn {
+    width: 190px;
+    margin-left: 33px;
+    // margin-right: 3rem;
+  }
+
+  &__phone {
+    margin-left: 3rem;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: calc(25% - 15px);
+    flex: 0 0 calc(25% - 15px);
+    
+  }
+}

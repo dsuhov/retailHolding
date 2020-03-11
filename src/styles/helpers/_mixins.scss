@@ -1,0 +1,28 @@
+@mixin size($a,$b: $a) {
+    width: $a;
+    height: $b;
+}
+
+@mixin fontSize($px, $width) {
+    $pixelRat: ((100/$width)*$px)+0.001;
+    font-size: calc(1em + #{$pixelRat}vw);
+}
+
+@mixin image($width, $height) {
+    .image {
+        width: #{$width}px;
+  
+        &__picture {
+            display: block;
+          position: relative;
+          width: 100%;
+          padding-top: ($height/$width)*100%;
+        }
+      
+        &__img {
+            display: block;
+          position: absolute;
+          top: 0; left: 0;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.main-btn {
+  display: block;
+  text-decoration: none;
+  background-color: #0075FF;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #fff;
+  text-align: center;
+
+  &:hover {
+    background-color: #3793FF;
+  }
+
+  &.main-btn {
+
+    &__h40 {
+      padding: 1.3rem 0;
+    }
+  }
+}

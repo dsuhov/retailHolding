@@ -1,0 +1,84 @@
+.header-card {
+  width: 100%;
+  // border-bottom: 5px solid transparent;
+  
+
+  &.header-card-1 {
+    border-bottom: 5px solid #265EAA;
+    background: url('../img/general/header-card-bg-1.jpg') center bottom / 100% auto no-repeat;
+  }
+
+  &.header-card-2 {
+    border-bottom: 5px solid #85BE40;
+    background: url('../img/general/header-card-bg-2.jpg') center bottom / 100% auto no-repeat;
+  }
+
+  &.header-card-3 {
+    border-bottom: 5px solid #F3942B;
+    background: url('../img/general/header-card-bg-3.jpg') center bottom / 100% auto no-repeat;
+  }
+
+  &.header-card-4 {
+    border-bottom: 5px solid #232A55;
+    background: url('../img/general/header-card-bg-1.jpg') center bottom / 100% auto no-repeat;
+  }
+
+  &__inner {
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #FFFFFF 60%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &__border {
+    border: 5px solid transparent;
+    // min-height: 38.8rem;
+
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 0;
+    padding-bottom: 8.5rem;
+  }
+
+  &:hover &__border {
+    border: 5px solid #0075FF;
+  }
+
+  &__title {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    margin-bottom: 3rem;
+    min-height: 10rem;
+  }
+
+  &__item {
+    color: #666666;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+
+    margin-bottom: 0.5rem;
+
+    padding-left: 1.4rem;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: calc(50% - 1.5px);
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: #4C8AC1;
+    }
+  }
+
+  &__btn {
+    width: 150px;
+  }
+}

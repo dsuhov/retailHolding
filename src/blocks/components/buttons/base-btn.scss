@@ -1,0 +1,21 @@
+.base-btn {
+
+  background-color: #3793FF;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  border: 1px solid #0075FF;
+  color: #fff;
+
+  &:hover {
+    background-color: #0075FF;
+    border: 1px solid #3793FF;
+  }
+
+  &.base-btn {
+
+    &__h40 {
+      padding: 1.2rem 0;
+    }
+  }
+}

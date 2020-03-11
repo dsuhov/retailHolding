@@ -1,0 +1,5 @@
+mixin main-btn(size, text, id)
+  button(type="button" id=`${id}` class=`main-btn__h${size}`).main-btn!= text
+
+mixin main-btn-link(size, text, link)
+  a(href=`${link}` class=`main-btn__h${size}` target="_blank").main-btn!= text

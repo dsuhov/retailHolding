@@ -1,0 +1,16 @@
+.header {
+  // height: 930px;
+}
+
+.header.header-main {
+
+  &.no-webp {
+    background: url('../img/general/header-main-bg.jpg') center / cover no-repeat;
+  }
+
+  &.webp {
+    background: url('../img/general/header-main-bg.webp') center / cover no-repeat;
+  }
+}
+
+@import "header-main";

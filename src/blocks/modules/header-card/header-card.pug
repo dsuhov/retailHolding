@@ -1,0 +1,12 @@
+include ../../components/buttons/main-btn
+
+mixin header-card(data)
+  .header-card(class=`header-card-${data.order}`)
+    .header-card__inner
+      .header-card__border
+        .header-card__title!= data.title
+        ul.header-card__list
+          each list_item in data.items
+            li.header-card__item= list_item
+        .header-card__btn
+          +main-btn(data.btn.size, data.btn.text, data.btn.id)

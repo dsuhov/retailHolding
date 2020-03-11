@@ -1,0 +1,23 @@
+.header-phone {
+
+  &__phone-link {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #fff;
+    margin-bottom: 3px;
+    text-decoration: none;
+  }
+
+  &__text-btn {
+    padding: 0;
+    color: #3793FF;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    width: auto;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

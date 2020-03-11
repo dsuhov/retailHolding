@@ -1,0 +1,20 @@
+include ../../components/buttons/main-btn
+
+block variables
+
+.object-card(class="bg-img lazy-bg" data-lbg=`${obj.background}`)
+  .object-card__inner
+    .object-card__content
+      .object-card__title!= obj.title
+      .object-card__location= obj.location
+      .object-card__float-up
+        .object-card__date= obj.date
+        .object-card__info
+          .object-card__area
+            span= obj.area
+            span кв.м.
+          .object-card__duration
+            span= obj.duration[0]
+            span= obj.duration[1]
+        .object-card__btn
+          +main-btn-link('40', 'Подробнее', '#')

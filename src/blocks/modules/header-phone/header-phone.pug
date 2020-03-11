@@ -1,0 +1,5 @@
+- var headerPhoneData = {tel: "+74996540747", teltext: "8 (499) 654-07-47", textBtn: "Обратный звонок"}
+
+.header-phone
+  a(href=`tel:${headerPhoneData.tel}`).header-phone__phone-link= headerPhoneData.teltext
+  button.header-phone__text-btn= headerPhoneData.textBtn

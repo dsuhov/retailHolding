@@ -1,0 +1,24 @@
+-
+  var reasonsData = {
+    title: '5 причин',
+    subtitle: 'почему 87% заказчиков рекомендуют <br>нас коллегам и партнерам',
+    lastBlock: ['60%', 'объектов сдаем раньше <br>ожидаемых сроков'],
+    items: [
+      'Работа согласно ГОСТам и СНИПам и Тройной контроль качества - бригадиром, прорабом и директором',
+      'Несем материальную ответственность за <br>соблюдение сроков <br>и объем работ по договору',
+      'Благодаря большому опыту работы с согласующими инстанциями все объекты проходят проверку с первого раза.',
+      'Собственный штат специалистов с 10-летним опытом в коммерческом и промышленном ремонте'
+    ]
+  }
+
+.reasons(class="bg-img lazy-bg" data-lbg="img/general/reasons-bg.jpg")
+  .container
+    h2.reasons__title!= reasonsData.title
+    .reasons__subtitle!= reasonsData.subtitle
+    .reasons__line
+      .reasons__items
+        each item in reasonsData.items 
+          p.reasons__item!= item
+      .reasons__last-item
+        span!= reasonsData.lastBlock[0]
+        span!=reasonsData.lastBlock[1]

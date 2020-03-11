@@ -1,0 +1,38 @@
+.header-banner {
+  color: #fff;
+
+  &__title {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+  }
+
+  &__line {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__line-number {
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+  }
+
+  &__line-objects {
+    margin-left: 2rem;
+
+    span {
+      display: block;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+
+      &:first-child {
+        color: #A3A3A3;
+      }
+
+      &:last-child {
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+include ../../components/image/image
+
+mixin trust-us-item(logo, text)
+  .trust-us-item
+    .trust-us-item__logo
+      +image('png', logo, 'Fix Price')
+    .trust-us-item__text= text
+
+.trust-us
+  .container
+    .trust-us__content
+      .trust-us__title
+        span Нам доверяют крупные сети
+        span по всей России
+      .trust-us__items
+        .trust-us__item
+          +trust-us-item('fix_price', '500 магазинов')
+        .trust-us__item
+          +trust-us-item('magnit', '17 магазинов')
+        .trust-us__item
+          +trust-us-item('center_obuv', '12 магазинов')
+        .trust-us__item
+          +trust-us-item('center_obuv', '12 магазинов')
+        .trust-us__item
+          +trust-us-item('magnit', '17 магазинов')
+        .trust-us__item
+          +trust-us-item('fix_price', '500 магазинов')

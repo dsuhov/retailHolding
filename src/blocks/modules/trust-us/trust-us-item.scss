@@ -1,0 +1,21 @@
+.trust-us-item {
+
+
+  &__logo {
+    margin-bottom: 10px;
+    text-align: center;
+
+    .image__img {
+      display: inline-block;
+      
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
