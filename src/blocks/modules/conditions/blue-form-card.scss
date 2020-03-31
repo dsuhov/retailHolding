@@ -1,0 +1,52 @@
+.blue-form-card {
+  color: #fff;
+  background-color: #1768C8;
+  padding: 4rem 4rem 3rem;
+
+  &__title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 13px;
+  }
+
+  &__parph {
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.7);
+
+    b {
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+
+  &__form {
+    padding-top: 3.8rem;
+  }
+
+  &__phone-field {
+    margin-bottom: 10px;
+  }
+  
+
+  &__btn {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 17px;
+    color: #1768C8;
+    height: 56px;
+    margin-bottom: 15px;
+  }
+
+  &__accept-conf {
+    width: 60%;
+
+    .accept-conf__link {
+      color: #fff;
+    }
+  }
+}

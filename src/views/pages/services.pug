@@ -1,0 +1,16 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+	- const title = "Retail Holding | Услуги"
+	- var bodyClass = 'services-page'
+
+block content
+	.services-wrapper
+		include ../../blocks/modules/header/header-services
+		include ../../blocks/modules/footer/footer-services
+		include ../../blocks/components/backdrop/backdrop
+
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")

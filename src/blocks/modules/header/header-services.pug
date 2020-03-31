@@ -1,0 +1,29 @@
+include ../../components/buttons/base-btn
+include ../header-card/header-card
+include ../header-card/headerCardData
+include ../../components/arrows/arrows
+
+header.header-services
+  .container
+    .header-services__top-line
+      .header-main__logo
+        include ../logo/logo-black
+      .header-main__controls
+        .header-main__menu
+          .header-main__burger.header-services__burger
+            include ../burger/burger
+          include ../menu/header-menu
+        .header-main__btn
+          +base-btn('40', 'Презентация компании', 'header-main-btn')
+        .header-main__phone
+          include ../header-phone/header-phone
+    .header-services__breadcrumbs
+      include ../bradcrumbs/bradcrumbs
+    h2.header-services__title Услуги
+    .header-services__cards-media-wrapper.header-cards-wrapper
+      +arrows-black('cards-media')
+      .cards-track
+        .header-services__cards.header-cards
+          each item in headerCardData
+            .header-services__card
+              +header-card(item)

@@ -1,0 +1,39 @@
+include ../../components/image/image
+include ../../components/arrows/arrows
+
+.gratitude
+  .container
+    h2.gratitude__title Благодарности <br>от заказчиков
+    .gratitude__content
+      .gratitude__slider-container
+        +arrows('gratitude')
+        .gratitude__slider
+          .gratitude__track
+            .gratitude__slides
+              .gratitude__slider-item
+                +image('jpg', 'gratitude_small', 'alt')
+                .gratitude__item-test
+                  span от компании
+                  span Fix Price
+              .gratitude__slider-item
+                +image('jpg', 'gratitude_small', 'alt')
+                .gratitude__item-test
+                  span от компании
+                  span ЦентрОбувь
+              .gratitude__slider-item
+                +image('jpg', 'gratitude_small', 'alt')
+                .gratitude__item-test
+                  span от компании
+                  span МосТраншБанк
+              .gratitude__slider-item
+                +image('jpg', 'gratitude_small', 'alt')
+                .gratitude__item-test
+                  span от компании
+                  span Пятерочка
+              .gratitude__slider-item
+                +image('jpg', 'gratitude_small', 'alt')
+                .gratitude__item-test
+                  span от компании
+                  span Пятерочка
+      .gratitude__more
+        a(href="#").gratitude__more-link Больше отзывов

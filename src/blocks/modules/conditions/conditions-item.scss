@@ -1,0 +1,41 @@
+.conditions-item {
+  position: relative;
+  padding-left: 62px;
+
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &.conditions-item__icon {
+
+      &--1 .svg-sprite-icon {
+        width: 34px;
+        height: 38px;
+      } 
+  
+      &--2 .svg-sprite-icon {
+        width: 29px;
+        height: 29px;
+      }
+  
+      &--3 .svg-sprite-icon {
+        width: 36px;
+        height: 29px;
+      } 
+    }
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #474747;
+
+    b {
+      color: #000;
+      font-weight: bold;
+    }
+  }
+
+}

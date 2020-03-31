@@ -1,0 +1,16 @@
+- var bfc_prph1 = 'Отправьте нам ее. Мы проверим цены и ошибки в расчетах. С вероятностью 60% <b>мы сможем уменьшить стоимость ремонта на 3-7% без потери качества.</b>'
+- var bfc_prph2 = 'Вы получите от нас смету с более низкой ценой и аргументацию, на чем можно сэкономить.'
+
+include ../../components/form-elements/form-elements
+include ../../components/buttons/white-btn
+
+.blue-form-card
+  .blue-form-card__title Уже получили смету от другой компании?
+  p.blue-form-card__parph!= bfc_prph1
+  p.blue-form-card__parph!= bfc_prph2
+  form(action="" method="post").blue-form-card__form
+    .blue-form-card__phone-field
+      +phone('Введите номер телефона')
+    button(type="button" name="form-type" value="Получить смету" id="blue-form-card_btn").blue-form-card__btn Получить смету
+    .blue-form-card__accept-conf
+      include ../accept-conf/accept-conf

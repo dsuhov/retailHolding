@@ -13,4 +13,39 @@
   }
 }
 
+.header-cards-wrapper {
+  
+
+  .glide__arrow--left {
+    left: 0;
+
+    display: none;
+
+    @media (max-width: 540px) {
+	    display: block;
+    }
+  }
+
+  .glide__arrow--right {
+    right: 0;
+
+    display: none;
+
+    @media (max-width: 540px) {
+	    display: block;
+    }
+  }
+
+  @media (max-width: 540px) {
+    position: relative;
+  padding: 0 40px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 0 34px;
+  }
+}
+
 @import "header-main";
+@import "header-services";
+@import "header-object";

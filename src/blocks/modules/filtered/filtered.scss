@@ -1,0 +1,26 @@
+.filtered {
+
+  &__filter {
+    padding-bottom: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 540px) {
+      display: block;
+    }
+  }
+
+  &__object {
+    width: 50%;
+    flex: 0 0 50%;
+
+    @media (max-width: 540px) {
+      width: 100%;
+    }
+  }
+}
+
+@import "filter";

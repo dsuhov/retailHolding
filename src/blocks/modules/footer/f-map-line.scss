@@ -1,0 +1,119 @@
+.f-map-line {
+  position: relative;
+
+  @media (max-width: 768px) {
+    position: static;
+  }
+  
+  &__map {
+    width: 100%;
+    min-height: 570px;
+    background-color: rgb(146, 146, 146);
+
+    @media (max-width: 768px) {
+      min-height: 400px;
+    }
+
+    @media (max-width: 375px) {
+      min-height: 350px;
+    }
+  }
+
+  &__card {
+    position: absolute;
+    top: 30px;
+    left: (390/1920)*100%;
+    z-index: 40;
+
+    @media (max-width: 1050px) {
+      top: 30px;
+      left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      position: static;
+      width: 100%;
+    }
+  }
+}
+
+.map-card {
+  background-color: #fff;
+  padding: 52px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 30px;
+  }
+
+  &__address {
+    margin-bottom: 20px;
+  }
+
+  &__city {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    span {
+      padding-top: 5px;
+      display: block;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__worktime {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #646464;
+    margin-bottom: 20px;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__tel {
+    margin-bottom: 20px;
+
+    .header-phone__phone-link {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;
+    }
+
+    .header-phone__text-btn {
+      font-size: 12px;
+      line-height: 14px;
+      color: #0075FF;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__email {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 30px;
+  }
+
+  &__present {
+    width: 160px;
+  }
+}

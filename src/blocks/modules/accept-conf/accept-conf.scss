@@ -1,0 +1,42 @@
+.accept-conf {
+  display: block;
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    position: relative;
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    // cursor: pointer;
+    // white-space: nowrap;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-5px);
+      background-color: #E6E6E6;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    color: #0075FF;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__input:checked + &__label::before {
+    background-color: #0075FF;
+  }
+}

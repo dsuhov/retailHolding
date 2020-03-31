@@ -1,0 +1,127 @@
+.gratitude {
+  background-color: #265EAA;
+  padding-top: 9.5rem;
+  padding-bottom: 7.8rem;
+
+  color: #fff;
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+
+    margin-bottom: 6.4rem;
+
+    @media (max-width: 768px) {
+      text-align: center;
+      font-size: 34px;
+      line-height: normal;
+    }
+  }
+
+  &__slider-container {
+    padding: 0 66px;
+    position: relative;
+
+    @media (max-width: 1140px) {
+      padding: 0 45px;
+      width: 900px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 900px) {
+      padding: 0 45px;
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 620px) {
+      padding: 0 42px;
+      width: 340px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 375px) {
+      padding: 0 38px;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__slider {
+    @media (max-width: 375px) {
+      width: 100%;
+    }
+  }
+
+  &__item-test {
+    padding-top: 1rem;
+    text-align: center;
+
+    span { 
+      display: block; 
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    span:first-child {
+      color: rgba(255, 255, 255, 0.6);
+      
+    }
+
+    span:last-child {
+      
+    }
+  }
+
+  &__slider-item {
+    width: 240px;
+
+    .image {
+      width: 240px;
+      margin: 0 auto;
+
+      @media (max-width: 375px) {
+        width: 100%;
+      }
+    }
+
+    .image__img {
+      cursor: pointer;
+      width: 100%;
+    }
+
+    @media (max-width: 375px) {
+      width: 100%;
+    }
+  }
+
+  &__more {
+    text-align: center;
+    padding-top: 7rem;
+  }
+
+  &__more-link {
+    color: inherit;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.gratitude-controls {
+
+  &__prev {
+    left: 0;
+    top: 44%;
+  }
+
+  &__next {
+    right: 0;
+    top: 44%;
+  }
+}

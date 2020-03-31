@@ -1,0 +1,20 @@
+include filter
+
+-
+  var filreredRemIOtd = [
+    ['Розничные магазины',
+    'Заведения сферы услуг'],
+    ['Финансовые организации',
+    'Офисные помещения'],
+    ['Кафе и рестораны']
+  ]
+
+.filtered
+  .filtered__filter
+    .container
+      +filter(filreredRemIOtd)
+  .filtered__content
+    .filtered__object
+      include ../object-card/object-card-1
+    .filtered__object
+      include ../object-card/object-card-2

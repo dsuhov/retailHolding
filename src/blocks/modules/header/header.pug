@@ -1,6 +1,7 @@
 include ../../components/buttons/base-btn
 include ../header-card/header-card
 include ../header-card/headerCardData
+include ../../components/arrows/arrows
 
 header.header.header-main.bg-img
   .container
@@ -9,6 +10,8 @@ header.header.header-main.bg-img
         include ../logo/logo
       .header-main__controls
         .header-main__menu
+          .header-main__burger
+            include ../burger/burger
           include ../menu/header-menu
         .header-main__btn
           +base-btn('40', 'Презентация компании', 'header-main-btn')
@@ -16,7 +19,9 @@ header.header.header-main.bg-img
           include ../header-phone/header-phone
     .header-main__header-banner
       include ../header-banner/header-banner
-    .header-main__cards
-      each item in headerCardData
-        .header-main__card
-          +header-card(item)
+    .header-main__cards-media-wrapper.header-cards-wrapper
+      +arrows('cards-media')
+      .header-main__cards.header-cards
+        each item in headerCardData
+          .header-main__card
+            +header-card(item)

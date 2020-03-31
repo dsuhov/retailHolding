@@ -1,5 +1,9 @@
 .last-objects__object:nth-child(even) .object-card__content {
   padding-left: (80/960)*100%;
+
+  @media (max-width: 768px) {
+    padding-left: (80/960)*100%;
+  }
 }
 
 .object-card {
@@ -7,14 +11,14 @@
   width: 100%;
   color: #fff;
 
-  background-position: center top -14rem;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #eee;
 
   &__inner {
     transition: background 0.3s linear;
-    min-height: 400px;
+    
     background: rgba(0, 0, 0, 0.6);
   }
 
@@ -25,6 +29,17 @@
   &__content {
     padding-left: (390/960)*100%;
     padding-top: 6rem;
+    min-height: 400px;
+
+    @media (max-width: 768px) {
+      padding-left: (80/960)*100%;
+      min-height: 300px;
+    }
+
+    @media (max-width: 375px) {
+      min-height: auto;
+      padding-bottom: 50px;
+    }
   }
 
   &__title {
@@ -33,6 +48,11 @@
     font-weight: bold;
     margin-bottom: 5px;
     max-width: 90%;
+
+    @media (max-width: 540px) {
+      font-size: 20px; // 30px
+      line-height: normal; 
+    }
   }
 
   &__location {
@@ -40,7 +60,11 @@
     line-height: 1.142em; // 16px
     font-weight: bold;
     color: rgba(255, 255, 255, 0.5);
-
+    
+    @media (max-width: 540px) {
+      font-size: 14px;
+      line-height: normal;
+    }
   }
 
   &__info {
@@ -52,6 +76,10 @@
     font-size: adaptFont(4, 1920); // 14px
     line-height: 1.142em; 
     margin-bottom: 1rem;
+
+    @media (max-width: 540px) {
+      font-size: 24px;
+    }
   }
 
   &__area, &__duration {
@@ -60,7 +88,12 @@
       display: block;
       font-weight: bold;
       font-size:  adaptFont(38, 1920);// 48px;
-      line-height: adaptFont(8, 1920); //56px
+      line-height: adaptFont(8, 1920); 
+      
+      @media (max-width: 540px) {
+        font-size: 30px;
+        line-height: normal;
+      }//56px
     }
 
     span:last-child {
@@ -68,6 +101,10 @@
       font-size: adaptFont(4, 1920); // 14px
       line-height: 1.142em;
       text-align: right;
+
+      @media (max-width: 540px) {
+        font-size: 14px;
+      }
     }
   }
 

@@ -7,6 +7,14 @@ html {
     font-family: 'Trebuchet MS', sans-serif;
     font-size: $base-font-size;
     height: 100%;
+
+    @media (max-width: 768px) {
+        font-size: 50%;
+    }
+
+    @media (max-width: 540px) {
+        font-size: 40%;
+    }
 }
 
 body {
@@ -69,8 +77,26 @@ textarea { resize: none; }
     margin: 0 auto;
     max-width: $content-size;
     width: 100%;
+
+    @media (max-width: 1140px) {
+        padding: 0 15px;
+    }
 }
 
 .loading {
     background: url("../img/general/preloader.gif") center / auto no-repeat;
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+}
+
+.services-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    footer {
+        margin-top: auto;
+    }
 }

@@ -1,0 +1,18 @@
+.white-btn {
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  color: #0075FF;
+
+  padding: 13px 10px;
+  border: 1px solid #0075FF;
+  transition-property: background-color, color;
+  transition: 0.2s linear;
+
+  &:hover {
+    background-color: #0075FF;
+    color: #fff;
+  }
+}

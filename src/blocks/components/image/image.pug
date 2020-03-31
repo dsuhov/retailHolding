@@ -3,3 +3,12 @@ mixin image(base_type, img_name, alt)
     picture.image__picture
       source(type="image/webp" data-srcset=`img/general/${img_name}.webp`)
       img(src="img/general/preloader.gif" data-srcset=`img/general/${img_name}.${base_type}` alt=""+alt).image__img.lazy-img-simple
+
+mixin image-adaptive(img_name, alt)
+  .image-adaptive
+    picture.image-adaptive__wrapper
+      source(type="image/webp" data-srcset=`img/general/${img_name}.webp 1x, img/general/${img_name}_2x.webp 2x`)
+      img(
+        src="img/general/preloader.gif" 
+        data-srcset=`img/general/${img_name}.jpg 1x, img/general/${img_name}_2x.jpg 2x` alt=""+alt
+      ).image-adaptive__img.lazy-img-simple

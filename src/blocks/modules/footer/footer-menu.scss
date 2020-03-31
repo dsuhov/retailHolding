@@ -1,0 +1,31 @@
+.footer-menu {
+  display: flex;
+
+  @media (max-width: 1050px) {
+    display: block;
+  }
+  
+  &__col:not(:last-child) {
+    margin-right: 3.5rem;
+  }
+
+  &__link {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0075FF;
+    text-decoration: none;
+
+    &:first-child {
+      margin-bottom: 1.2rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 1050px) {
+      margin-bottom: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+include ../../components/arrows/arrows
+
+.news-block
+  .container
+    h2.news-block__title Что у нас произошло <br>за последнее время
+    .news-block__media-wrapper
+      .news-block__arrows
+        +arrows('news-block')
+      .news-block__cards
+        .news-block__card
+          include ../news-card/news-card
+        .news-block__card
+          include ../news-card/news-card
+        .news-block__card
+          include ../news-card/news-card
+        .news-block__card
+          include ../news-card/news-card
+      a(href="#").news-block__link Раздел новостей

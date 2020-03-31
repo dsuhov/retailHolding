@@ -2,22 +2,38 @@
 
   &__phone-link {
     display: block;
-    font-size: 2.4rem;
-    line-height: 2.8rem;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
     color: #fff;
     margin-bottom: 3px;
     text-decoration: none;
+
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 20px;
+      line-height: normal;
+    }
   }
 
   &__text-btn {
+    width: 100%;
     padding: 0;
     color: #3793FF;
     font-size: 1.4rem;
     line-height: 1.6rem;
-    width: auto;
+    // width: auto;
+    text-align: right;
 
     &:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 }

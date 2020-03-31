@@ -1,0 +1,109 @@
+.range-field {
+  margin-top: 10px;
+
+  position: relative;
+
+  input[type="text"] {
+    width: 100%;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 11px 20px;
+    color: #000000;
+    border: none;
+    box-sizing: border-box;
+    background: #E6E6E6;
+  }
+
+  &__hint {
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 14px;
+    vertical-align: middle;
+    color: #5B5B5B;
+    pointer-events: none;
+  }
+}
+
+.input-checkbox {
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    position: relative;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    // white-space: nowrap;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-5px);
+      background-color: #E6E6E6;
+    }
+  }
+
+  
+
+  &__input:checked + &__label::before {
+    background-color: #0075FF;
+  }
+}
+
+.text-field {
+  width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 11px;
+  color: #000000;
+  border: none;
+  box-sizing: border-box;
+  background: #E6E6E6;
+  text-align: center;
+
+  // @include placeholder {
+  //   color: #000000;
+  // }
+}
+
+.date-input {
+  width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 11px;
+  color: #5B5B5B;
+  border: none;
+  box-sizing: border-box;
+  background: #E6E6E6;
+
+  // -webkit-appearance: none;
+
+  &::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+  }
+}
+
+.email-input, .phone-input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 18px 20px;
+  color: #000000;
+  border: none;
+  box-sizing: border-box;
+  background: #E6E6E6;
+}

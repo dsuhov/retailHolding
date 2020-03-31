@@ -1,0 +1,18 @@
+include ../../components/buttons/white-btn
+
+.f-map-line
+  .f-map-line__card
+    .map-card
+      .map-card__title Контакты
+      .map-card__address
+        .map-card__city Москва
+          span Ленинградский проспект <br>дом 80, корпус 39
+      .map-card__worktime
+        span СБ - 11:00-15:00
+        span ПН - 09:00-18:00
+      .map-card__tel
+        include ../header-phone/header-phone
+      a(href="mailto:retail-holding@gmail.com").map-card__email retail-holding@gmail.com
+      .map-card__present
+        +white-btn('Презентация компании', 'footer-card-btn')
+  .f-map-line__map#map

@@ -1,4 +1,5 @@
 include ../../components/image/image
+include ../../components/arrows/arrows
 
 mixin trust-us-item(logo, text)
   .trust-us-item
@@ -12,16 +13,19 @@ mixin trust-us-item(logo, text)
       .trust-us__title
         span Нам доверяют крупные сети
         span по всей России
-      .trust-us__items
-        .trust-us__item
-          +trust-us-item('fix_price', '500 магазинов')
-        .trust-us__item
-          +trust-us-item('magnit', '17 магазинов')
-        .trust-us__item
-          +trust-us-item('center_obuv', '12 магазинов')
-        .trust-us__item
-          +trust-us-item('center_obuv', '12 магазинов')
-        .trust-us__item
-          +trust-us-item('magnit', '17 магазинов')
-        .trust-us__item
-          +trust-us-item('fix_price', '500 магазинов')
+      .trust-us__media-wrapper
+        .trust-us__controls
+          +arrows('trust-us')
+        .trust-us__items
+          .trust-us__item
+            +trust-us-item('fix_price', '500 магазинов')
+          .trust-us__item
+            +trust-us-item('magnit', '17 магазинов')
+          .trust-us__item
+            +trust-us-item('center_obuv', '12 магазинов')
+          .trust-us__item
+            +trust-us-item('center_obuv', '12 магазинов')
+          .trust-us__item
+            +trust-us-item('magnit', '17 магазинов')
+          .trust-us__item
+            +trust-us-item('fix_price', '500 магазинов')

@@ -69,8 +69,13 @@
         "yargs": "~13.2.4"
     },
     "dependencies": {
+        "@glidejs/glide": "^3.4.1",
         "glider-js": "^1.7.1",
+        "imask": "^6.0.3",
+        "jquery": "^3.4.1",
         "picomodal": "^3.0.0",
+        "rangeslider.js": "^2.3.3",
+        "slick-carousel": "^1.8.1",
         "smart-grid": "^2.1.2",
         "svg4everybody": "^2.1.9",
         "vanilla-lazyload": "^13.0.1"

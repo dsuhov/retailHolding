@@ -26,6 +26,10 @@
   &__inner {
     box-sizing: border-box;
     background: linear-gradient(180deg, #FFFFFF 60%, rgba(255, 255, 255, 0) 100%);
+
+    @media (max-width: 540px) {
+      
+    }
   }
 
   &__border {
@@ -36,6 +40,20 @@
     padding-left: 3rem;
     padding-right: 0;
     padding-bottom: 8.5rem;
+
+    @media (max-width: 540px) {
+      padding: 20px 50px;
+      padding-bottom: 80px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 360px) {
+      padding: 20px;
+      padding-bottom: 50px;
+    }
   }
 
   &:hover &__border {
@@ -45,21 +63,36 @@
   &__title {
     color: #000;
     font-weight: bold;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
+    font-size: 18px;
+    line-height: 21px;
 
     margin-bottom: 3rem;
+
+    @media (max-width: 540px) {
+      text-align: center;
+      font-size: 16px;
+      line-height: normal;
+    
+      br {
+        display: none;
+      }
+    }
   }
 
   &__list {
     margin-bottom: 3rem;
     min-height: 10rem;
+
+    @media (max-width: 540px) {
+      min-height: auto;
+      order: 10;
+    }
   }
 
   &__item {
     color: #666666;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    font-size: 12px;
+    line-height: 14px;
 
     margin-bottom: 0.5rem;
 
@@ -80,5 +113,10 @@
 
   &__btn {
     width: 150px;
+
+    @media (max-width: 540px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 }

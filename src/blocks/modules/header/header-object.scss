@@ -1,0 +1,15 @@
+.header-object {
+  padding-bottom: 7rem;
+
+  .header-menu__link, .header-phone__phone-link {
+    color: #000;
+  }
+
+  &__top-line {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+  }
+}

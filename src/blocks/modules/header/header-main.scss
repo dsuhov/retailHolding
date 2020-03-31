@@ -9,11 +9,25 @@
     margin-bottom: 6rem;
   }
 
+  &__logo {
+    width: 175px;
+    flex: 0 0 175px;
+
+    @media (max-width: 540px) {
+      width: 52px;
+      flex: 0 0 52px;
+    }
+  }
+
   &__controls {
     margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   &__header-banner {
@@ -23,21 +37,104 @@
   &__btn {
     width: 190px;
     margin-left: 33px;
-    // margin-right: 3rem;
+    
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    @media (max-width: 768px) {
+      order: 1;
+      flex-grow: 0;
+    }
   }
 
   &__phone {
     margin-left: 3rem;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      flex-grow: 1;
+      text-align: center;
+    }
   }
 
   &__cards {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1050px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 
   &__card {
     width: calc(25% - 15px);
     flex: 0 0 calc(25% - 15px);
     
+    @media (max-width: 1050px) {
+      width: 300px;
+      flex: 0 0 300px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      width: 250px;
+      flex: 0 0 250px;
+    }
+
+    @media (max-width: 540px) {
+      width: 310px;
+      flex: 0 0 310px;
+    }
+
+    @media (max-width: 360px) {
+      width: 290px;
+      flex: 0 0 290px;
+    }
+  }
+
+  &__cards-media-wrapper {
+    @media (max-width: 540px) {
+      max-width: 410px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 40;
+    }
+
+    @media (max-width: 360px) {
+      max-width: 290px;
+    }
+  }
+}
+
+.header-main-controls {
+  display: none;
+
+  @media (max-width: 540px) {
+    display: block;
+    
+  }
+
+  .glide__arrow {
+    border: 1px solid #333;
+
+    svg {
+      fill: #333;
+    }
+  }
+
+  .header-main-controls__prev {
+    z-index: 100;
+    left: 8px;
+    top: 50px;
+  }
+
+  .header-main-controls__next {
+    right: 8px;
+    z-index: 100;
+    top: 50px;
   }
 }

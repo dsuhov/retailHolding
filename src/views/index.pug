@@ -3,14 +3,20 @@ include helpers/mixins
 
 block variables
 	- const title = "Retail Holding | Главная"
+	- var bodyClass = 'main-page'
 
 block content
+	div(style="display: none")
 	include ../blocks/modules/header/header
 	include ../blocks/modules/last-objects/last-objects
 	include ../blocks/modules/trust-us/trust-us
 	include ../blocks/modules/reasons/reasons
 	include ../blocks/modules/gratitude/gratitude
-	div(style="height: 500px; background-color: #ccc;")
+	include ../blocks/modules/news-block/news-block
+	include ../blocks/modules/calc-price/calc-price
+	include ../blocks/modules/footer/footer
+	include ../blocks/components/backdrop/backdrop
+	//- div(style="height: 500px; background-color: #ccc;")
 
 block scripts
 	script(src="js/main.js")

@@ -1,0 +1,44 @@
+.hb-logos {
+
+  @media (max-width: 540px) {
+    width: 220px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 50px;
+    padding-top: 20px;
+  }
+  
+  &__logo {
+    width: 120px;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__logos-media {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  button {
+    display: none;
+
+    @media (max-width: 540px) {
+      display: block;
+    }
+  }
+
+  .hb-logos-controls__prev {
+    left: 0;
+  }
+
+  .hb-logos-controls__next {
+    right: 0;
+  }
+}

@@ -1,0 +1,20 @@
+include ../../components/image/image
+include ../../components/arrows/arrows
+
+.header-banner.header-banner--black
+  h1.header-banner__title Ремонт, отделка <br>и реконструкция <br>коммерческих объектов
+  .header-banner__line
+    .header-banner__line-number.header-banner__line-number--80 945
+    .header-banner__line-objects
+      .header-banner__lo-top коммерческих объектов с 2011 года, <br>среди которых <b>крупные сети</b>:
+      .header-banner__logos.hb-logos
+        +arrows-black('hb-logos')
+        .hb-logos__logos-media
+          .hb-logos__logo
+            +image('png', 'fix_price', 'fix_price')
+          .hb-logos__logo
+            +image('png', 'magnit', 'fix_price')
+          .hb-logos__logo
+            +image('png', 'center_obuv', 'fix_price')
+          .hb-logos__logo
+            +image('png', 'spmas', 'fix_price')

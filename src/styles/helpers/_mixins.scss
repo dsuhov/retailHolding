@@ -11,18 +11,61 @@
 @mixin image($width, $height) {
     .image {
         width: #{$width}px;
-  
+        
         &__picture {
             display: block;
-          position: relative;
-          width: 100%;
-          padding-top: ($height/$width)*100%;
+            position: relative;
+            width: 100%;
+            padding-top: ($height/$width)*100%;
         }
-      
+        
         &__img {
             display: block;
-          position: absolute;
-          top: 0; left: 0;
+            position: absolute;
+            top: 0; left: 0;
+            
         }
     }
 }
+
+@mixin image-adaptive($width, $height) {
+    .image-adaptive {
+        width: 100%;
+        
+        &__wrapper {
+            display: block;
+            position: relative;
+            width: 100%;
+            padding-top: ($height/$width)*100%;
+        }
+        
+        &__img {
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 0; left: 0;
+            background-position: center;
+
+            &.loading {
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+      @content;
+    }
+    &:-moz-placeholder {
+      @content;
+    }
+    &::-moz-placeholder {
+      @content;
+    }
+    &:-ms-input-placeholder {
+      @content;
+    }
+  }

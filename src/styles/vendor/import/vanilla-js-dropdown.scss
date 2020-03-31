@@ -1,0 +1,78 @@
+.js-Dropdown {
+  display: inline-block;
+  
+  position: relative;
+  width: 100%;
+}
+.js-Dropdown-title {
+  background: #E6E6E6;
+  // border: 1px groove #a5a5a5;
+  box-sizing: border-box;
+  cursor: pointer;
+  
+  height: 3em;
+  // padding: 0.5em;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  //
+  color: #000;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 11px 20px;
+}
+.js-Dropdown-title:after {
+  border-color: #a5a5a5 transparent transparent transparent;
+  border-style: solid;
+  border-width: 6px 6px;
+  content: '';
+  display: block;
+  height: 0;
+  position: absolute;
+  right: 1em;
+  top: 45%;
+  width: 0;
+}
+.js-Dropdown-list {
+  
+  box-sizing: border-box;
+  display: none;
+  height: 0;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  transition: 0.2s linear;
+  width: 100%;
+  z-index: 999;
+}
+.js-Dropdown-list.is-open {
+  display: block;
+  height: auto;
+  opacity: 1;
+}
+.js-Dropdown-list li {
+  cursor: pointer;
+  padding: 11px 20px;
+  background: #E6E6E6;
+  //
+  color: #000;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+.js-Dropdown-list li:hover {
+  background-color: #eeeeee;
+}
+// .js-Dropdown-list li.is-selected {
+  // background-color: #ffdfb6;
+// }
+// .js-Dropdown-optgroup {
+//   border-bottom: 1px solid #a5a5a5;
+//   color: #a5a5a5;
+//   cursor: default;
+//   padding: 1em 0.5em;
+//   text-align: center;
+// }

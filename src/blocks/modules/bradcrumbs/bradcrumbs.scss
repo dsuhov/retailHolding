@@ -1,0 +1,43 @@
+.bradcrumbs {
+  
+
+  &__line {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: inline-block;
+    color: #000;
+
+    & > * {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    
+  }
+
+  &__item.bradcrumbs__item--link {
+    a {
+      color: #0075FF;
+      text-decoration: none;
+      &:hover {text-decoration: underline;}
+    }
+  }
+
+  &__item.bradcrumbs__item--delimeter {
+    position: relative;
+    padding-right: 30px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 1px;
+      background: #DADADA;
+      top: 50%;
+      right: 10px;
+    }
+  }
+}
