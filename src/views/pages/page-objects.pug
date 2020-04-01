@@ -1,0 +1,23 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+	- const title = "Retail Holding | Объекты"
+	- var bodyClass = 'page-objects'
+
+block content
+	include ../../blocks/modules/header/header-objects
+	include ../../blocks/modules/bradcrumbs/bradcrumbs-block
+	include ../../blocks/modules/header-banner/header-banner-p-objects
+	include ../../blocks/modules/filtered/filtered-objects
+	//- include ../../blocks/modules/conditions/conditions
+	//- include ../../blocks/modules/reasons/reasons
+	//- include ../../blocks/modules/gratitude/gratitude
+	//- include ../../blocks/modules/trust-us/trust-us
+	//- include ../../blocks/modules/calc-price/calc-price
+	include ../../blocks/modules/footer/footer
+	include ../../blocks/components/backdrop/backdrop
+
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")

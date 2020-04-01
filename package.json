@@ -80,11 +80,6 @@
         "svg4everybody": "^2.1.9",
         "vanilla-lazyload": "^13.0.1"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
     "lint-staged": {
         "!(_*).scss": [
             "stylelint --fix --color --config ./.stylelintrc"

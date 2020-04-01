@@ -1,0 +1,20 @@
+.header-banner-p-objects {
+  padding-top: 4rem;
+  
+  &__line {
+    display: flex;
+    align-items: center;
+  }
+
+  &__number {
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 174px;
+    margin-right: 4rem;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
