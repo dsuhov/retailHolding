@@ -1,0 +1,45 @@
+include ../../components/image/image
+include ../../components/arrows/arrows
+
+.certificates
+  .container
+    h2.certificates__title.section-title Retail Holding имеет все необходимые сертификаты и разрешения
+    .certificates__slider-container
+      +arrows('certificates')
+      .certificates__js-slider
+        // slider item
+        .certificates__slider-item
+          .certificates__certificate.certificate
+            .certificate__descr Сертификат соответствия <br><b>ISO 9001</b>
+            .certificate__pic
+              +image('jpg', 'example-cert_small', 'alt')
+        // slider item
+        .certificates__slider-item
+          .certificates__certificate.certificate
+            .certificate__descr Свидетельство о членстве <br><b>СРО</b>
+            .certificate__pic
+              +image('jpg', 'example-cert_small', 'alt')
+        // slider item
+        .certificates__slider-item
+          .certificates__certificate.certificate
+            .certificate__descr Свидетельство <br>о допуске к работам
+            .certificate__pic
+              +image('jpg', 'example-cert_small', 'alt')
+        // slider item
+        .certificates__slider-item
+          .certificates__certificate.certificate
+            .certificate__descr Свидетельство <br>о постановке на учет
+            .certificate__pic
+              +image('jpg', 'example-cert_small', 'alt')
+        // slider item
+        .certificates__slider-item
+          .certificates__certificate.certificate
+            .certificate__descr Свидетельство <br>о допуске к работам
+            .certificate__pic
+              +image('jpg', 'example-cert_small', 'alt')
+        // slider item
+        .certificates__slider-item
+          .certificates__certificate.certificate
+            .certificate__descr Свидетельство <br>о постановке на учет
+            .certificate__pic
+              +image('jpg', 'example-cert_small', 'alt')

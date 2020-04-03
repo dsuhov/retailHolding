@@ -1,0 +1,49 @@
+.certificates {
+
+  &__title {
+    margin-bottom: 5rem;
+  }
+
+  &__slider-container {
+    position: relative;
+    padding: 0 40px;
+
+    .glide__arrow {
+      border: 1px solid #0075FF;
+      svg {fill: #0075FF;}
+    }
+
+    .certificates-controls__next {
+      right: 0;
+    }
+
+    .certificates-controls__prev {
+      left: 0;
+    }
+  }
+
+  &__certificate {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+
+.certificate {
+
+  &__descr {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    min-height: 50px;
+
+    b {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__pic {
+    width: 240px;
+  }
+}

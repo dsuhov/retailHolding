@@ -4,4 +4,5 @@ import "%modules%/header-banner/header-banner";
 import "%modules%/filtered/filtered-objects";
 import "%modules%/logo-line/logo-line";
 import "%modules%/team/team";
+import "%modules%/certificates/certificates";
 import "%modules%/rh-history/rh-history";
