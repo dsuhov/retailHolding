@@ -1,7 +1,9 @@
 export default () => {
   const inputFile = document.querySelector('.calc-price__file-input');
 
-  inputFile.addEventListener('change', fileInputHandler);
+  if (document.querySelector('.calc-price__file-input')) {
+    inputFile.addEventListener('change', fileInputHandler);
+  }
 }
 
 function fileInputHandler(evt) {

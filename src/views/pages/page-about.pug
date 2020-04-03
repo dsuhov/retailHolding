@@ -1,0 +1,21 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+  - const title = "Retail Holding | О компании"
+  - var bodyClass = 'page-about'
+
+block content
+  include ../../blocks/modules/header/header-objects
+  include ../../blocks/modules/bradcrumbs/bradcrumbs-block
+  // todo: about-head
+  // todo: logo-line
+  // todo: restore team
+  // todo: rh-history
+  // todo: certificates
+  include ../../blocks/modules/footer/footer
+  include ../../blocks/components/backdrop/backdrop
+
+block scripts
+  script(src="js/main.js")
+  script(src="js/vendor.js")
