@@ -1,0 +1,254 @@
+.team {
+  padding: 10rem 0;
+  color: #000;
+}
+
+.team__person-item.team__person-item--active,
+.team__person-item:hover {
+  background: #265EAA;
+}
+
+.team__person-item.team__person-item--active .team__person-item-name,
+.team__person-item:hover .team__person-item-name {
+  color: #fff;
+}
+
+.team__person-item.team__person-item--active .team__person-item-charge,
+.team__person-item:hover .team__person-item-charge {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.team__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 5px;
+}
+
+.team__subtitle {
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.team__line {
+  display: flex;
+  padding-top: 5rem;
+}
+
+.team__person-list-side {
+  padding-right: 14px;
+  flex-grow: 1;
+}
+
+.team__person-list-side-container {
+  padding-right: 18px;
+  max-height: 470px;
+}
+
+.team__person-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.team__person-item-pic {
+  width: 100px;
+  flex: 0 0 auto;
+  margin-right: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team__person-item-pic .image-adaptive {
+  width: 100%;
+}
+
+.team__person-item-pic .image-adaptive__wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.team__person-item-pic .image-adaptive__img {
+  
+  width: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+}
+
+.team__person-item-pic .image-adaptive__img.loading {
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.team__person-item-pic .image-adaptive__img.loaded {
+  width: 100%;
+}
+
+.team__person-item-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 1rem;
+}
+
+.team__person-item-charge {
+  font-size: 14px;
+  line-height: 16px;
+  color: #474747;
+}
+
+.team__person-side {
+  width: 63.15789%;
+  flex: 0 0 63.15789%;
+  background: #E7E7E7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team__person-side-content {
+  text-align: center;
+}
+
+.team__person-side-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.team__person-side-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.team__person-side-charge {
+  max-width: 300px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+.team__person-side-projects {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@media (max-width: 1140px) {
+  .team__person-list-side {
+    flex: 0 0 406px;
+    width: 406px;
+  }
+
+  .team__person-side {
+    width: auto;
+    flex: 1 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .team__person-item.team__person-item--active,
+  .team__person-item:hover {
+    background: transparent;
+  }
+
+  .team__person-item.team__person-item--active .team__person-item-name,
+  .team__person-item:hover .team__person-item-name {
+    color: #000;
+  }
+
+  .team__person-item.team__person-item--active .team__person-item-charge,
+  .team__person-item:hover .team__person-item-charge {
+    color: #474747;
+  }
+
+  .team__title {
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  .team__subtitle {
+    font-size: 22px;
+    line-height: normal;
+  }
+
+  .team__line {
+    display: block;
+  }
+
+  .team__person-list-side {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .team__person-side {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .team__title {
+    text-align: center;
+    padding: 0 10%;
+  }
+
+  .team__title br {
+    display: none;
+  }
+
+  .team__subtitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .team__person-item-pic {
+    width: 80px;
+  }
+
+  .team__person-list-side-container {
+    max-height: 360px;
+  }
+}
+
+@media (max-width: 360px) {
+  .team__title {
+    padding: 0;
+  }
+
+  .team__person-item {
+    padding: 10px;
+  }
+
+  .team__person-item-name {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .team__person-item-charge {
+    font-size: 12px;
+    line-height: normal;
+  }
+}
