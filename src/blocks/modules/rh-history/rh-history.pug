@@ -1,0 +1,21 @@
+include ../../components/image/image
+include ../../components/arrows/arrows
+include rh-history-data
+
+mixin rh-history-item(data)
+  .rh-history-item
+    .rh-history-item__pic
+      +image('jpg', 'rh-hist-pic', 'alt')
+    .rh-history-item__descr
+      .rh-history-item__year= data.year
+      .rh-history-item__text= data.text
+
+.rh-history
+  .container
+    h2.rh-history__title.section-title История ГК Retail Holding
+    .rh-history__slider-container
+      +arrows('rh-history')
+      .rh-history__line
+        each item in rh_history_data
+          .rh-history__item
+            +rh-history-item(item)

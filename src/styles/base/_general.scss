@@ -100,3 +100,20 @@ input[type="number"] {
         margin-top: auto;
     }
 }
+
+.section-title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+
+    @media (max-width: 620px) {
+        font-size: 38px;
+        line-height: normal;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 28px;
+        line-height: normal;
+    }
+}
