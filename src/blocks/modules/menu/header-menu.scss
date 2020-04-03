@@ -64,13 +64,14 @@
     transition: 0.3s linear;
 
     background-color: #fff;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.14);
+    box-shadow: 0 0 20px rgba(30, 30, 30, 0.14);
     border-radius: 4px;
     padding: 10px 0;
     position: absolute;
     top: 100%;
     left: 0;
     width: calc(10em + 5vw);
+    z-index: 60;
 
     @media (max-width: 1140px) {
       padding: 16px 10px;
@@ -81,7 +82,7 @@
       position: static;
       width: 100%;
       transform: inherit;
-
+      box-shadow: none;
       display: none;
     }
   }

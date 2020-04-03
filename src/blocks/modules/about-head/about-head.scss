@@ -1,0 +1,89 @@
+.about-head {
+  padding-top: 3.6rem;
+  color: #fff;
+  text-align: center;
+
+  &__background {
+    max-width: 1140px;
+    margin: 0 auto;
+    background: url('../img/general/pabout.jpg') center / cover no-repeat;
+  }
+
+  &__content {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 10.8rem 0 16rem;
+
+    @media (max-width: 620px) {
+      padding: 10.8rem 15px 16rem;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 4.3rem;
+
+    @media (max-width: 540px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 38px;
+      line-height: normal;
+    }
+  }
+
+  &__subtitle {
+    padding-top: 4px;
+    display: block;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    @media (max-width: 375px) {
+      font-size: 20px;
+      line-height: normal;
+    }
+  }
+
+  &__line {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 540px) {
+      display: block;
+    }
+  }
+
+  &__col {
+    @media (max-width: 540px) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    span {
+      display: block;
+    }
+
+    span:first-child {
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 84px;
+      margin-bottom: 10px;
+
+      @media (max-width: 375px) {
+        font-size: 52px;
+        line-height: normal;
+        margin-bottom: 0;
+      }
+    }
+
+    span:last-child {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
