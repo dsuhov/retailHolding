@@ -70,11 +70,13 @@
     },
     "dependencies": {
         "@glidejs/glide": "^3.4.1",
+        "core-js": "^3.6.4",
         "glider-js": "^1.7.1",
         "imask": "^6.0.3",
         "jquery": "^3.4.1",
         "picomodal": "^3.0.0",
         "rangeslider.js": "^2.3.3",
+        "simplebar": "^5.1.0",
         "slick-carousel": "^1.8.1",
         "smart-grid": "^2.1.2",
         "svg4everybody": "^2.1.9",

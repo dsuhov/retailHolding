@@ -1,3 +1,4 @@
+import 'core-js/features/global-this';
 import IMask from 'imask';
 
 export default () => {
