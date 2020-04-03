@@ -1,0 +1,39 @@
+.logo-line {
+  padding: 10rem 0;
+
+  &__content {
+    padding: 0 50px;
+    position: relative;
+  }
+
+  // logo-line slider controls
+  &-controls__prev {
+    left: 0;
+  }
+
+  &-controls__next {
+    right: 0;
+  }
+
+  .glide__arrow {
+    border: 1px solid #0075FF;
+    svg {fill: #0075FF;}
+  }
+
+  &__slider {
+    // padding: 0 10px;
+  }
+
+  &__slide-logo {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+
+  &__slide-subscript {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
