@@ -6,3 +6,4 @@ import "%modules%/logo-line/logo-line";
 import "%modules%/team/team";
 import "%modules%/certificates/certificates";
 import "%modules%/rh-history/rh-history";
+import "%modules%/gratitude/gratitude";
