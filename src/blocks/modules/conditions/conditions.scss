@@ -32,3 +32,44 @@
 
 @import "blue-form-card";
 @import "conditions-item";
+
+@media (max-width: 1140px) {
+  .conditions__main {
+    padding-right: 20px;
+  }
+
+  .conditions__title {
+    font-size: 28px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .conditions__line {
+    display: block;
+  }
+
+  .conditions__main {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .conditions__form {
+    width: 100%;
+  }
+
+  .conditions-item__text {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .conditions-item__text br {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .conditions__title {
+    text-align: center;
+  }
+}

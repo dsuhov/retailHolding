@@ -1,0 +1,64 @@
+include ../../components/buttons/base-btn
+
+header.header-object.header-object--objects-page
+  .container
+    .header-object__top-line
+      .header-main__logo
+        include ../logo/logo-black
+      .header-main__controls
+        .header-main__menu
+          .header-main__burger.header-services__burger
+            include ../burger/burger
+          include ../menu/header-menu
+        .header-main__btn
+          +base-btn('40', 'Презентация компании', 'header-main-btn')
+        .header-main__phone
+          include ../header-phone/header-phone
+  .header-object__breadcrumbs.header-remiotd__breadcrumbs
+    include ../bradcrumbs/bradcrumbs
+  .header-object__header-banner.header-remiotd__banner
+    .container
+      .header-banner.header-banner--black
+        h1.header-banner__title
+          | Ремонт, отделка 
+          br
+          | и реконструкция 
+          br
+          | коммерческих объектов
+        .header-banner__line
+          .header-banner__line-number.header-banner__line-number--80 945
+          .header-banner__line-objects
+            .header-banner__lo-top
+              | коммерческих объектов с 2011 года, 
+              br
+              | среди которых 
+              b крупные сети
+              | :
+            .header-banner__logos.hb-logos
+              button.glide__arrow.glide__arrow--black.glide__arrow--left.hb-logos-controls__prev
+                svg(viewbox="0 0 6 10" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M6 9.56128L0 5.03921L6 0.584473V9.56128Z")
+              button.glide__arrow.glide__arrow--black.glide__arrow--right.hb-logos-controls__next
+                svg(viewbox="0 0 6 10" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M6 9.56128L0 5.03921L6 0.584473V9.56128Z")
+              .hb-logos__logos-media
+                .hb-logos__logo
+                  .image
+                    picture.image__picture
+                      source(type="image/webp" data-srcset="img/general/fix_price.webp")
+                      img.image__img.lazy-img-simple(src="img/general/preloader.gif" data-srcset="img/general/fix_price.png" alt="fix_price")
+                .hb-logos__logo
+                  .image
+                    picture.image__picture
+                      source(type="image/webp" data-srcset="img/general/magnit.webp")
+                      img.image__img.lazy-img-simple(src="img/general/preloader.gif" data-srcset="img/general/magnit.png" alt="fix_price")
+                .hb-logos__logo
+                  .image
+                    picture.image__picture
+                      source(type="image/webp" data-srcset="img/general/center_obuv.webp")
+                      img.image__img.lazy-img-simple(src="img/general/preloader.gif" data-srcset="img/general/center_obuv.png" alt="fix_price")
+                .hb-logos__logo
+                  .image
+                    picture.image__picture
+                      source(type="image/webp" data-srcset="img/general/spmas.webp")
+                      img.image__img.lazy-img-simple(src="img/general/preloader.gif" data-srcset="img/general/spmas.png" alt="fix_price")
