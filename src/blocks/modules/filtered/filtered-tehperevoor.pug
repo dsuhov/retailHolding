@@ -1,0 +1,19 @@
+include filter
+
+-
+  var filreredRemIOtd = [
+    ['Научные предприятия',
+    'Фабрики и заводы'],
+    ['Производственные помещения',
+    'Складские помещения']
+  ]
+
+.filtered
+  .filtered__filter
+    .container
+      +filter(filreredRemIOtd)
+  .filtered__content
+    .filtered__object
+      include ../object-card/object-card-1
+    .filtered__object
+      include ../object-card/object-card-2
