@@ -2,6 +2,10 @@
   padding-top: 8rem;
   padding-bottom: 10.8rem;
 
+  &.news-block-page {
+    padding-top: 4rem;
+  }
+
   &__title {
     font-weight: bold;
     font-size: 48px;
@@ -12,6 +16,10 @@
     @media (max-width: 768px) {
       font-size: 28px;
       line-height: normal;
+    }
+
+    &.news-block-page__title {
+
     }
   }
 
@@ -35,6 +43,10 @@
 
     @media (max-width: 1050px) {
       position: relative;
+    }
+
+    &.news-block-page__media-wrapper {
+      padding-top: 5rem;
     }
   }
 
@@ -88,3 +100,5 @@
     }
   }
 }
+
+@import "news-block-page-pagination";

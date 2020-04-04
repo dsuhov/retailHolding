@@ -17,7 +17,7 @@ export default () => {
     },
   });
 
-  new LazyLoad({
+  const simpleLL = new LazyLoad({
     elements_selector: '.lazy-img-simple'
   })
 }

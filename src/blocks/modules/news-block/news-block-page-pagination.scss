@@ -1,0 +1,27 @@
+.news-block-page-pagination {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+
+  &__line {
+    display: flex;
+  }
+
+  &__number {
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    flex: 0 0 30px;
+    text-align: center;
+
+    &.news-block-page-pagination__number--active {
+      font-weight: bold;
+      color: #FFFFFF;
+
+      background: #0075FF;
+      border-radius: 50%;
+    }
+  }
+}

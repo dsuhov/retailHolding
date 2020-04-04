@@ -1,0 +1,122 @@
+.page-single-news {
+  padding: 4rem 0 5rem;
+  color: #000;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 620px) {
+      flex-direction: column;
+    }
+  }
+
+  &__text-block {
+    flex: 0 0 (563/1140)*100%;
+
+    @media (max-width: 768px) {
+      flex: 0 0 50%;
+      padding-right: 20px;
+    }
+
+    @media (max-width: 620px) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    max-width: 450px;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+      line-height: normal;
+    }
+
+    @media (max-width: 375px) {
+      text-align: center;
+    }
+  }
+
+  &__date {
+    font-size: 18px;
+    line-height: 21px;
+    color: #727272;
+    margin-bottom: 5rem;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 375px) {
+      text-align: center;
+    }
+  }
+
+  &__main-text {
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 19px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: normal;
+      }
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__images {
+    width: (460/1140)*100%;
+    flex: 0 0 (460/1140)*100%;
+
+    @media (max-width: 768px) {
+      width: 50%;
+      flex: 0 0 50%;
+    }
+
+    @media (max-width: 620px) {
+      display: none;
+    }
+  }
+
+  &__hidden-img {
+    display: none;
+
+    @media (max-width: 620px) {
+      display: block;
+      @include image(460, 310);
+      margin-bottom: 20px;
+    }
+  }
+
+  &__big-img {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include image(460, 310);
+  }
+
+  &__images-line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__small-img {
+    cursor: pointer;
+    width: (150/460)*100%;
+    flex: 0 0 (150/460)*100%;
+
+    @include image(150, 100);
+  }
+}

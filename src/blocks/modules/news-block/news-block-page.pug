@@ -1,0 +1,22 @@
+include ../../components/arrows/arrows
+
+.news-block.news-block-page
+  .container
+    h2.news-block__title.news-block-page__title Что у нас произошло <br>за последнее время
+    .news-block__media-wrapper.news-block-page__media-wrapper
+      .news-block__arrows
+        +arrows('news-block')
+      .news-block__cards
+        .news-block__card
+          include ../news-card/news-card
+        .news-block__card
+          include ../news-card/news-card
+        .news-block__card
+          include ../news-card/news-card
+        .news-block__card
+          include ../news-card/news-card
+    .news-block-page__pagination.news-block-page-pagination
+      .news-block-page-pagination__line
+        .news-block-page-pagination__number.news-block-page-pagination__number--active 1
+        .news-block-page-pagination__number 2
+        .news-block-page-pagination__number 3
