@@ -1,0 +1,20 @@
+include ../../../components/buttons/base-btn
+
+header.header-object.header-proekt-i-montaj
+  .container
+    .header-object__top-line
+      .header-main__logo
+        include ../../logo/logo-black
+      .header-main__controls
+        .header-main__menu
+          .header-main__burger.header-services__burger
+            include ../../burger/burger
+          include ../../menu/header-menu
+        .header-main__btn
+          +base-btn('40', 'Презентация компании', 'header-main-btn')
+        .header-main__phone
+          include ../../header-phone/header-phone
+    .header-proekt-i-montaj__breadcrumbs
+      include ../../bradcrumbs/bradcrumbs
+    .header-proekt-i-montaj__banner
+      include ../../header-banner/header-proekt-i-montaj-banner/header-proekt-i-montaj-banner
