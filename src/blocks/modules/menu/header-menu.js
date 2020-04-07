@@ -23,15 +23,15 @@ if (window.matchMedia("(max-width: 1140px)").matches) {
     }
   });
   
-  linkWithSublist.forEach(el => {
-    el.querySelector('a').addEventListener('click', evt => {
-      evt.preventDefault();
+  // linkWithSublist.forEach(el => {
+  //   el.querySelector('a').addEventListener('click', evt => {
+  //     evt.preventDefault();
       
-      $(el.querySelector('ul')).slideToggle({
-        duration: 0
-      });
-    })
-  });
+  //     $(el.querySelector('ul')).slideToggle({
+  //       duration: 0
+  //     });
+  //   })
+  // });
 }
 
 if (window.matchMedia("(max-width: 540px)").matches) {

@@ -86,7 +86,7 @@
     }
 
     @media (max-width: 540px) {
-      width: 310px;
+      width: 100%;
       flex: 0 0 310px;
     }
 
@@ -115,7 +115,6 @@
 
   @media (max-width: 540px) {
     display: block;
-    
   }
 
   .glide__arrow {
@@ -138,3 +137,4 @@
     top: 50px;
   }
 }
+

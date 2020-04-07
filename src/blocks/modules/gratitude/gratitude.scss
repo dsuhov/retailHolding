@@ -68,10 +68,6 @@
       color: rgba(255, 255, 255, 0.6);
       
     }
-
-    span:last-child {
-      
-    }
   }
 
   &__slider-item {
@@ -88,8 +84,12 @@
     }
 
     .image__img {
-      cursor: pointer;
-      width: 100%;
+      width: auto;
+
+      &.loaded {
+        cursor: pointer;
+        width: 100%;
+      }
     }
 
     @media (max-width: 375px) {

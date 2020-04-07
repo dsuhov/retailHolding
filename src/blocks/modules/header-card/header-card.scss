@@ -50,8 +50,13 @@
       align-items: center;
     }
 
+    @media (max-width: 375px) {
+      padding-top: 40px;
+    }
+
     @media (max-width: 360px) {
       padding: 20px;
+      padding-top: 40px;
       padding-bottom: 50px;
     }
   }
