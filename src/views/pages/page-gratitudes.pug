@@ -1,0 +1,18 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+  - const title = "Retail Holding | Благодарности"
+  - var bodyClass = 'page-gratitudes-body'
+
+block content
+  include ../../blocks/modules/header/header-objects
+  include ../../blocks/modules/bradcrumbs/bradcrumbs-block
+  include ../../blocks/modules/page-gratitudes/page-gratitudes
+  include ../../blocks/modules/calc-price/calc-price
+  include ../../blocks/modules/footer/footer
+  include ../../blocks/components/backdrop/backdrop
+
+block scripts
+  script(src="js/main.js")
+  script(src="js/vendor.js")

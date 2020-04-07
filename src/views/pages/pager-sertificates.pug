@@ -1,0 +1,23 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+  - const title = "Retail Holding | Сертификаты"
+  - var bodyClass = 'page-sertificates'
+
+block content
+  include ../../blocks/modules/header/header-objects
+  include ../../blocks/modules/bradcrumbs/bradcrumbs-block
+  //- include ../../blocks/modules/about-head/about-head
+  //- include ../../blocks/modules/logo-line/logo-line
+  //- include ../../blocks/modules/team/team
+  //- include ../../blocks/modules/rh-history/rh-history
+  //- include ../../blocks/modules/certificates/certificates
+  //- include ../../blocks/modules/gratitude/gratitude
+  //- include ../../blocks/modules/calc-price/calc-price
+  include ../../blocks/modules/footer/footer
+  include ../../blocks/components/backdrop/backdrop
+
+block scripts
+  script(src="js/main.js")
+  script(src="js/vendor.js")
