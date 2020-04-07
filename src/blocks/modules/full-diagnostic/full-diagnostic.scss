@@ -1,0 +1,158 @@
+.full-diagnostic {
+  padding: 8.5rem 0 5rem;
+  color: #000;
+}
+
+.full-diagnostic__title {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 84px;
+  color: #000000;
+}
+
+.full-diagnostic__line {
+  display: flex;
+}
+
+.full-diagnostic__col {
+  width: 50%;
+  flex: 0 0 50%;
+}
+
+.full-diagnostic__right p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 23px;
+  color: #474747;
+}
+
+.full-diagnostic__right p:not(:last-of-type) {
+  margin-bottom: 1.8rem;
+}
+
+.full-diagnostic__right b {
+  color: #000000;
+  font-weight: bold;
+}
+
+.full-diagnostic__form {
+  padding-top: 3rem;
+}
+
+.full-diagnostic__form-line {
+  display: flex;
+  max-width: 448px;
+  margin-bottom: 8px;
+}
+
+.full-diagnostic__form-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+
+.full-diagnostic__phone {
+  flex: 0 0 calc(50% - 3px);
+}
+
+.full-diagnostic__btn {
+  margin-left: auto;
+  flex: 0 0 calc(50% - 3px);
+}
+
+.full-diagnostic__phone .phone-input {
+  padding: 14px 20px;
+}
+
+.full-diagnostic__accept-conf .accept-conf__label {
+  color: #000;
+}
+
+@media (max-width: 1050px) {
+  .full-diagnostic__title {
+    font-size: 52px;
+    line-height: normal;
+    margin-right: 20px;
+  }
+
+  .full-diagnostic__col {
+    width: auto;
+    flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .full-diagnostic__right p br {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .full-diagnostic {
+    text-align: center;
+  }
+
+  .full-diagnostic__title {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .full-diagnostic__title br {
+    display: none;
+  }
+
+  .full-diagnostic__line {
+    display: block;
+  }
+
+  .full-diagnostic__phone .phone-input {
+    padding: 11px 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .full-diagnostic__title {
+    font-size: 28px;
+  }
+
+  .full-diagnostic__right p {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .full-diagnostic__form-line {
+    display: block;
+    max-width: none;
+  }
+
+  .full-diagnostic__form-title {
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  .full-diagnostic__phone {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .full-diagnostic__btn {
+    width: 100%;
+  }
+
+  .full-diagnostic__btn button {
+    padding: 11px 0 !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .full-diagnostic__accept-conf .accept-conf__label {
+    text-align: left;
+  }
+}
+
+@media (max-width: 360px) {
+  .full-diagnostic__form-title {
+    font-size: 22px;
+  }
+}

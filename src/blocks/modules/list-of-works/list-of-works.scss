@@ -1,0 +1,148 @@
+.list-of-works {
+  padding: 5rem 0;
+}
+
+.list-of-works__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 5rem;
+}
+
+.list-of-works__list-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 2rem;
+}
+
+.list-of-works__line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-of-works__col {
+  width: 46%;
+  flex: 0 0 46%;
+}
+
+.list-of-works__list {
+  position: relative;
+  padding-left: 40px;
+}
+
+.list-of-works__list:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.list-of-works__list .svg-sprite-icon {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  fill: #0075FF;
+}
+
+.list-of-works__list.list-of-works__list--lamp .icon-lamp {
+  width: 18px;
+  height: 25px;
+}
+
+.list-of-works__list.list-of-works__list--glass-drop .icon-glass-drop {
+  width: 14px;
+  height: 20px;
+}
+
+.list-of-works__list.list-of-works__list--tools .icon-tools {
+  width: 21px;
+  height: 19px;
+}
+
+.list-of-works__list.list-of-works__list--ventilator .icon-ventilator {
+  width: 18px;
+  height: 24px;
+}
+
+/*
+* LIST OF WORKS LIST
+*/
+
+.list-of-works-list {
+  width: 100%;
+}
+
+.list-of-works-list__item {
+  color: #000;
+  font-size: 14px;
+  line-height: normal;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.list-of-works-list__item::before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  content: "";
+  left: 0;
+  top: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #4C8AC1;
+}
+
+@media (max-width: 768px) {
+  .list-of-works__line {
+    display: block;
+  }
+
+  .list-of-works__col {
+    width: 100%;
+  }
+
+  .list-of-works__list {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .list-of-works__title {
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  .list-of-works__list-title {
+    font-size: 18px;
+    line-height: normal;
+    padding-right: 50px;
+    position: relative;
+  }
+
+  .list-of-works__list-title::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/general/down-arrow.svg");
+    right: 11px;
+    top: calc(50% - 8px);
+    transition: transform 0.4s linear;
+  }
+
+  .list-of-works__list-title.open::after {
+    transform: rotate(-90deg);
+  }
+
+  .list-of-works__list {
+    padding-left: 30px;
+  }
+
+  .list-of-works__list:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .list-of-works-list {
+    display: none;
+    padding-bottom: 10px;
+  }
+}

@@ -8,4 +8,5 @@ import "%modules%/team/team";
 import "%modules%/certificates/certificates";
 import "%modules%/rh-history/rh-history";
 import "%modules%/gratitude/gratitude";
+import "%modules%/list-of-works/list-of-works";
 import "%modules%/page-single-news/page-single-news";

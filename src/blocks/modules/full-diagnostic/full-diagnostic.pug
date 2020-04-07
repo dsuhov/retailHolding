@@ -1,0 +1,41 @@
+.full-diagnostic
+  .container.full-diagnostic__line
+    .full-diagnostic__col
+      .full-diagnostic__title
+        | Полная 
+        br
+        | диагностика 
+        br
+        | объекта
+    .full-diagnostic__col.full-diagnostic__right
+      p
+        | Проведем для Вас полную диагностику всех систем 
+        br
+        | и коммуникаций здания, в результате которой  
+        br
+        b
+          | Вы получите точную и объективную картину  
+          br
+          | текущего состояния объекта.
+      p
+        | Это позволит вам прогнозировать затраты 
+        br
+        | на обслуживание, ремонт и замену любых 
+        br
+        | инженерных систем зданий.
+      form.full-diagnostic__form(action="" method="post")
+        .full-diagnostic__form-title
+          | Оставьте заявку 
+          br
+          | на диагностику объекта
+        .full-diagnostic__form-line
+          .full-diagnostic__phone
+            input.phone-input(name="phone" placeholder="Введите номер телефона")
+          .full-diagnostic__btn
+            button#full-diagnostic-btn.main-btn__h45.main-btn(type="submit") Получить смету
+        .full-diagnostic__accept-conf
+          label.accept-conf
+            input.accept-conf__input(type="checkbox" name="accept-confidentiality" checked="")
+            .accept-conf__label
+              | Согласен с 
+              a.accept-conf__link(href="#") Политикой конфиденциальности сайта
