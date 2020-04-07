@@ -1,0 +1,24 @@
+.certificates-block {
+  padding-top: 4rem;
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 5rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+
+    @media (max-width: 1140px) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    max-width: 240px;
+    flex: 0 0 240px;
+    margin: 0 30px 30px;
+  }
+}

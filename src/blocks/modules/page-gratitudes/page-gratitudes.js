@@ -4,8 +4,6 @@ const pageGratitudeBlock = document.querySelector('.page-gratitudes');
 
 if (pageGratitudeBlock) {
     const pics = pageGratitudeBlock.querySelectorAll('.clickable');
-
-    console.log(pics);
     
     Array.from(pics).forEach((el) => {
         el.addEventListener('click', imgClickHandler);
