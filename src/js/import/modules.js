@@ -12,3 +12,4 @@ import "%modules%/page-gratitudes/page-gratitudes";
 import "%modules%/list-of-works/list-of-works";
 import "%modules%/page-single-news/page-single-news";
 import "%modules%/certificates-block/certificates-block";
+import "%modules%/vacancies/vacancies";

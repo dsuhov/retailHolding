@@ -1,0 +1,186 @@
+.vacancies {
+  padding-top: 5rem;
+
+  &__title {
+    @media (max-width: 375px) {
+      text-align: center;
+
+      &.section-title {
+        font-size: 38px;
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 900px) {
+      display: block;
+    }
+  }
+
+  &__main {
+    max-width: 555px;
+    flex: 0 0 555px;
+
+    @media (max-width: 1050px) {
+      flex: 1 1 555px;
+    }
+  }
+
+  &__side {
+    max-width: 388px;
+    flex: 0 0 388px;
+
+    @media (max-width: 1050px) {
+      max-width: 100%;
+    }
+  }
+
+  &__card {
+    margin-bottom: 3rem;
+  }
+
+
+}
+
+
+.vacancy-card {
+  background: #F4F4F4;
+  padding: 4rem;
+
+  &__title {
+    max-width: 300px;
+    margin-bottom: 2rem;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    @media (max-width: 375px) {
+      text-align: center;
+    }
+  }
+
+  &__line {
+    margin-bottom: 20px;
+  }
+
+  &__salary {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    span:first-child {
+      font-size: 16px;
+      line-height: 19px;
+      color: #0075FF;
+      margin-right: 10px;
+    }
+
+    span:last-child {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    @media (max-width: 375px) {
+      justify-content: center;
+    }
+  }
+
+  &__descr-block {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.vacancy-card-time {
+  display: flex;
+
+  @media (max-width: 375px) {
+    justify-content: center;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin-right: 3rem;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+
+    .svg-sprite-icon {
+      width: 24px;
+      height: 24px;
+      fill: #0075FF;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+
+.vacancy-card-descr-block {
+
+  &__title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+
+    @media (max-width: 375px) {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    font-size: 12px;
+    line-height: 14px;
+
+    &:before {
+      content: "• ";
+      color: #0075FF;
+    }
+  }
+}
+
+.vacancies-side-card {
+  padding: 3rem 4rem;
+  background: #1367CA;
+  color: #fff;
+
+  @media (max-width: 375px) {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  &__tel {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+
+    @media (max-width: 375px) {
+      line-height: normal;
+      font-size: 8.8vw;
+    }
+  }
+
+  &.fixed {
+    width: 388px;
+    position: fixed;
+    top: 20px;
+  }
+}

@@ -125,3 +125,12 @@ input[type="number"] {
         overflow: auto;
     }
 }
+
+.bottom-footer {
+    display: flex;
+    flex-direction: column;
+
+    &__footer {
+        margin-top: auto;
+    }
+}

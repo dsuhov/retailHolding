@@ -1,4 +1,3 @@
-import Glide from '@glidejs/glide';
 import picomodal from 'picomodal';
 import slick from 'slick-carousel';
 
