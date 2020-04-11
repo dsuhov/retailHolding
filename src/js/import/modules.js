@@ -1,10 +1,12 @@
 import "%modules%/menu/header-menu";
+import "%modules%/header/header";
 import "%modules%/calc-price/calc-price";
 import "%modules%/header-banner/header-banner";
 import "%modules%/filtered/filtered-objects";
 import "%modules%/logo-line/logo-line";
 import "%modules%/trust-us/trust-us";
 import "%modules%/team/team";
+import "%modules%/news-block/news-block";
 import "%modules%/certificates/certificates";
 import "%modules%/rh-history/rh-history";
 import "%modules%/gratitude/gratitude";

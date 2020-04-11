@@ -1,0 +1,54 @@
+.footer-contacts-l {
+
+  &__title {
+    margin-bottom: 4.7rem;
+  }
+
+  &__form {
+    max-width: 730px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: (470/730)*100%;
+    flex: (470/730)*100%;
+  }
+
+  &__right {
+    max-width: (250/730)*100%;
+    flex: (250/730)*100%;
+  }
+
+  &__textarea {
+    width: 100%;
+    border: none;
+    background: #E6E6E6;
+    padding: 1.2rem 3.5rem;
+
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    // min-height: 222%;
+  }
+
+  &__email, &__phone, &__btn {
+    margin-bottom: 5px;
+  }
+
+  &__accept-conf .accept-conf__label {
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 15px;
+    padding-top: 2px;
+
+    a {
+      font-size: inherit;
+      line-height: inherit;
+    }
+    // text-align: left;
+    width: 100%;
+    color: #000;
+  }
+}

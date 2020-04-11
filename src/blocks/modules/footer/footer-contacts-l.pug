@@ -1,0 +1,18 @@
+include ../../components/buttons/main-btn
+include ../../components/form-elements/form-elements
+
+.footer-contacts-l
+  .container
+    h2.footer-contacts-l__title.section-title Задайте нам вопрос <br>через форму обратной связи
+    form(action="" method="post").footer-contacts-l__form
+      .footer-contacts-l__left
+        textarea(name="textarea" placeholder="Ваш вопрос" id="footer-textarea" rows="12").footer-contacts-l__textarea
+      .footer-contacts-l__right
+        .footer-contacts-l__email
+          +email('', 'Введите почту')
+        .footer-contacts-l__phone
+          +phone('Введите номер телефона')
+        .footer-contacts-l__btn
+          +main-btn-sbm('54', 'Задать вопрос', 'footer-contacts-phone')
+        .footer-contacts-l__accept-conf
+          include ../accept-conf/accept-conf
