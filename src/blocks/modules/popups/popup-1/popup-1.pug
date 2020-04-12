@@ -1,0 +1,26 @@
+include ../../../components/form-elements/form-elements
+include ../../../components/buttons/main-btn
+
+// Получите консультацию от заместителя директора
+.popup-1(id="popup-1").popup
+  .popup-1__content(class="popup-lazy-img" data-lbg="img/general/popup-1-bg.jpg").popup__content
+    .popup__close
+    .popup-1__title.section-title.section-title--white Получите консультацию <br>от заместителя директора
+    .popup-1__subtitle В результате разговора Вы получите <br>ориентировочные стоимость и сроки проекта
+    form(action="" method="post").popup-1__form
+      .popup-1__bind-method
+        .popup-1__bm-title Как с Вами связаться?
+        .popup-1__bm-line.mb-10 
+          .popup-1__bm-chbox
+            +checkbox({checked: true, name: 'how_to_connect', label: 'По телефону'})
+          .popup-1__bm-chbox
+            +checkbox({checked: false, name: 'how_to_connect', label: 'WhatsApp'})
+          .popup-1__bm-chbox
+            +checkbox({checked: false, name: 'how_to_connect', label: 'Telegram'})
+        .popup-1__fields
+          .popup-1__phone.mb-10
+            +phone("Введите номер телефона")
+          .popup-1__phone.mb-10
+            +main-btn-sbm('54', 'Получить консультацию', 'popup-1-sbm')
+          .popup-1__accept-conf
+            include ../../accept-conf/accept-conf

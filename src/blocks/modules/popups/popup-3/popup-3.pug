@@ -1,0 +1,28 @@
+include ../../../components/form-elements/form-elements
+include ../../../components/buttons/main-btn
+include ../../../components/image/image
+
+// Укажите вашу почту и получите презентацию компании через 1 минуту
+.popup-3(id="popup-3").popup
+  .popup-3__content.popup__content
+    .popup__close.popup__close
+    .popup-3__left
+      .popup-3__pic
+        +image('png', 'popup-3-pic', 'Retail Holding')
+      a(href="#").popup-3__download
+        .popup-3__download-icon
+          +icon('file')
+        span PDF (3.4 мб)
+    .popup-3__right
+      .popup-3__title.section-title.section-title--white Укажите вашу почту <br>и получите презентацию <br>компании через 1 минуту
+      .popup-3__subtitle с описанием главных преимуществ  <br>компании, реальными проектами, <br>отзывами и выгодным предложением
+      .popup-3__form-title Куда прислать презентацию?
+      form(action="" method="post").popup-3__form
+        .popup-3__email.mb-5
+          +email('', 'Введите почту')
+        .popup-3__phone.mb-10
+          +phone('Введите номер телефона')
+        .popup-3__btn.mb-10
+          +main-btn-sbm('50', 'Заказать звонок', 'popup-3-btn')
+        .popup-3__accept-conf
+          include ../../accept-conf/accept-conf

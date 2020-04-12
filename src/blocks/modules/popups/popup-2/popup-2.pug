@@ -1,0 +1,23 @@
+include ../../../components/form-elements/form-elements
+include ../../../components/buttons/main-btn
+
+// Получите консультацию от заместителя директора
+.popup-2(id="popup-2").popup
+  .popup-2__content(class="popup-lazy-img" data-lbg="img/general/popup-2-bg.jpg").popup__content
+    .popup__close
+    .popup-2__title.section-title.section-title--white Оставьте <br>Ваш телефон
+    .popup-2__subtitle Я перезвоню в удобное для Вас время <br>и отвечу на все интересующие вопросы
+    form(action="" method="post").popup-2__form
+      .popup-2__phone
+        +phone("Введите номер телефона")
+      .popup-2__bind-method
+        .popup-2__bm-chbox
+          +checkbox({checked: true, name: 'when_to_connect', label: 'Перезвоните мне сейчас'})
+        .popup-2__bm-chbox
+          +checkbox({checked: false, name: 'when_to_connect', label: 'Ко времени'})
+      .popup-2__date-picker.mb-10
+        +date-input({})
+      .popup-2__btn.mb-10
+        +main-btn-sbm('45', 'Заказать звонок', 'popup-2-sbm')
+      .popup-2__accept-conf
+        include ../../accept-conf/accept-conf

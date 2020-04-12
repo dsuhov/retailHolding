@@ -116,6 +116,10 @@ input[type="number"] {
         font-size: 24px;
         line-height: normal;
     }
+    
+    &.section-title--white {
+        color: #fff;
+    }
 }
 
 .pico-content {
@@ -159,4 +163,12 @@ input[type="number"] {
         border: 1px solid rgba(0, 0, 0, 0.9) !important;
         color: rgba(0, 0, 0, 0.9) !important;
     }
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
 }

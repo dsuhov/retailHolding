@@ -1,0 +1,83 @@
+.popup-2 {
+  color: #fff;
+
+  @media (max-width: 375px) {
+    text-align: center;
+  }
+
+  &__content {
+    max-width: 1000px;
+    padding: 9.5rem 13.6rem 14.2rem;
+
+    @media (max-width: 540px) {
+      padding: 8rem 4rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      br {display: none;}
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 3rem;
+
+    @media (max-width: 768px) {
+      br {display: none;}
+    }
+  }
+
+  &__bind-method {
+    padding: 15px 0;
+    display: flex;
+
+    @media (max-width:360px) {
+      display: block;
+    }
+  }
+
+  &__bm-chbox:not(:last-child) {
+    margin-right: 3rem;
+
+    @media (max-width:360px) {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__phone, &__btn, &__date-picker, &__accept-conf {
+    max-width: 200px;
+
+    @media (max-width: 375px) {
+      max-width: 100%;
+    }
+  }
+
+  label {
+    @media (max-width: 375px) {
+      text-align: left;
+    }
+  }
+
+  &__form input {
+    font-size: 12px;
+    line-height: 14px;
+
+    @media (max-width: 375px) {
+      text-align: center;
+    }
+  }
+
+  &__accept-conf {
+    .accept-conf__label {
+      @media (max-width: 375px) {
+        display: inline-block;
+      }
+    }
+  }
+}

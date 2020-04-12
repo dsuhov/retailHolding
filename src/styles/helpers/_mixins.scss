@@ -20,11 +20,18 @@
         }
         
         &__img {
-            width: 100%;
+            width: auto;
             display: block;
             position: absolute;
-            top: 0; left: 0;
-            
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%);
+
+            &.loaded {
+                width: 100%;
+                top: 0; left: 0;
+                transform: none;
+            }
         }
     }
 }
@@ -41,16 +48,17 @@
         }
         
         &__img {
-            width: 100%;
+            width: auto;
             display: block;
             position: absolute;
-            top: 0; left: 0;
-            background-position: center;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%);
 
-            &.loading {
-                top: 50%;
-                left: 50%;
-                transform: translateY(-50%);
+            &.loaded {
+                width: 100%;
+                top: 0; left: 0;
+                transform: none;
             }
         }
     }

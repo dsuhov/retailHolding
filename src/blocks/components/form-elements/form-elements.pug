@@ -29,7 +29,7 @@ mixin text-field(data)
   input(name=`${data.name}` placeholder=""+data.placeholder).text-field
 
 mixin date-input(data)
-  input(type="date" name=""+data.name min="2020-01-01").date-input
+  input(type="date" name="datepicker" min="2020-01-01").date-input
 
 mixin email(name, placeholder)
   input(name="email" placeholder=`${placeholder}`).email-input

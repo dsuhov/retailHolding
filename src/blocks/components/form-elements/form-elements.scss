@@ -95,6 +95,10 @@
     display: none;
     -webkit-appearance: none;
   }
+
+  &:disabled {
+    color: rgb(173, 171, 171);
+  }
 }
 
 .email-input, .phone-input {

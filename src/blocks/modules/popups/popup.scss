@@ -1,0 +1,65 @@
+.popup {
+  display: none;
+
+  &__content {
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    cursor: pointer;
+    top: 37px;
+    right: 39px;
+    width: 39px;
+    height: 39px;
+    z-index: 50;
+
+    @media (max-width: 540px) {
+      top: 2rem;
+      right: 2rem;
+    }
+
+    @media (max-width: 375px) {
+      right: 15px;
+      width: 30px;
+    }
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      width: 39px;
+      height: 3px;
+      transform-origin: center;
+      left: 0;
+      top: 18px;
+      background: rgb(116, 116, 116);
+      z-index: 50;
+      transition: 0.2s linear;
+      transition-property: background;
+
+      @media (max-width: 375px) {
+        width: 30px;
+        height: 2px;
+        top: 16px;
+      }
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      &::before, &::after {
+        background: rgb(184, 184, 184);
+      }
+    }
+  }
+}
+
+@import "popup-1/popup-1";
+@import "popup-2/popup-2";
+@import "popup-3/popup-3";
