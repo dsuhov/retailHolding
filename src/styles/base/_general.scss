@@ -172,3 +172,12 @@ input[type="number"] {
 .mb-5 {
     margin-bottom: 5px;
 }
+
+.fancybox-content {
+    padding: 0 !important;
+
+    @media (max-width: 900px) {
+        // padding: 0 15px !important;
+        background: transparent !important;
+    }
+}

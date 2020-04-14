@@ -69,6 +69,7 @@
         "yargs": "~13.2.4"
     },
     "dependencies": {
+        "@fancyapps/fancybox": "^3.5.7",
         "@glidejs/glide": "^3.4.1",
         "core-js": "^3.6.4",
         "glider-js": "^1.7.1",

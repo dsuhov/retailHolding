@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import slick from 'slick-carousel';
-import picomodal from 'picomodal';
+import fancybox from "@fancyapps/fancybox";
 
 const certificates = document.querySelector('.certificates__slider-container');
 
@@ -43,14 +43,8 @@ if (certificates) {
 function certificatesClickHandler(evt) {
   const src = evt.target.dataset.srcset.replace('small', 'big');
   
-  picomodal({
-    content: `<img src="${src}">`,
-    overlayClose: true,
-    modalStyles: {
-      borderRadius: 0
-    },
-    
-  })
-  .afterClose(function (modal) { modal.destroy(); })
-  .show();
+  $.fancybox.open({
+    src  :  `<img src="${src}" />`,
+    type : 'inline',
+  });
 }

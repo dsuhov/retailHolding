@@ -1,4 +1,5 @@
-import picomodal from 'picomodal';
+import $ from 'jquery';
+import fancybox from "@fancyapps/fancybox";
 
 const certBlock = document.querySelector('.certificates-block');
 
@@ -11,14 +12,8 @@ if (certBlock) {
 function certificatesClickHandler(evt) {
     const src = evt.target.dataset.srcset.replace('small', 'big');
     
-    picomodal({
-        content: `<img src="${src}">`,
-        overlayClose: true,
-        modalStyles: {
-            borderRadius: 0
-        },
-        
-    })
-    .afterClose(function (modal) { modal.destroy(); })
-    .show();
+    $.fancybox.open({
+        src  :  `<img src="${src}" />`,
+        type : 'inline',
+    });
 }

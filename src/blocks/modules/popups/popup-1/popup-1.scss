@@ -8,6 +8,11 @@
   &__content {
     padding: 8.8rem 10rem 9.4rem;
     max-width: 1000px;
+    width: 1000px;
+
+    @media (max-width: 1050px) {
+      width: auto;
+    }
 
     @media (max-width: 540px) {
       padding: 8rem 4rem;

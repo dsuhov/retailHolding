@@ -25,6 +25,14 @@ mixin checkbox(data)
       input(type="checkbox" name=`${data.name}`  value=`${data.label}`).input-checkbox__input
     .input-checkbox__label= data.label
 
+mixin radio(name, value, checked)
+  label.input-checkbox
+    if checked
+      input(type="radio" name=`${name}` value=`${value}` checked).input-checkbox__input
+    else
+      input(type="radio" name=`${name}`  value=`${value}`).input-checkbox__input
+    .input-checkbox__label= value
+
 mixin text-field(data)
   input(name=`${data.name}` placeholder=""+data.placeholder).text-field
 

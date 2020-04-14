@@ -1,7 +1,13 @@
 import initLazy from "./popupLazyInit";
+import popupsModalLogic from "./popupsModalLogic";
 
 if (document.querySelector(".popup-lazy-img")) {
   const lazyInstance = initLazy(".popup-lazy-img");
+  const popups = document.getElementById('popups');
+
+  if (popups) {
+    popupsModalLogic(popups, lazyInstance);
+  }
 
   // disable date input
   const datePickerEl = document.querySelector('.popup-2__date-picker input[name="datepicker"]');
@@ -25,5 +31,4 @@ if (document.querySelector(".popup-lazy-img")) {
       isChooseDateEl[1].click();
     });
   }
-  
 }

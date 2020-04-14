@@ -12,11 +12,11 @@ include ../../../components/buttons/main-btn
         .popup-1__bm-title Как с Вами связаться?
         .popup-1__bm-line.mb-10 
           .popup-1__bm-chbox
-            +checkbox({checked: true, name: 'how_to_connect', label: 'По телефону'})
+            +radio('how_to_connect', 'По телефону', true)
           .popup-1__bm-chbox
-            +checkbox({checked: false, name: 'how_to_connect', label: 'WhatsApp'})
+            +radio('how_to_connect', 'WhatsApp', false)
           .popup-1__bm-chbox
-            +checkbox({checked: false, name: 'how_to_connect', label: 'Telegram'})
+            +radio('how_to_connect', 'Telegram', false)
         .popup-1__fields
           .popup-1__phone.mb-10
             +phone("Введите номер телефона")

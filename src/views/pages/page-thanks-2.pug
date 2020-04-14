@@ -1,0 +1,19 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+  - const title = "Retail Holding | А пока посмотрите наши свежие проекты"
+  - var bodyClass = 'page-thy-2'
+
+block content
+  .services-wrapper
+    include ../../blocks/modules/header/header-objects
+    include ../../blocks/modules/thp-banner/thp-banner-2
+    include ../../blocks/modules/last-objects/last-objects-clean
+    include ../../blocks/modules/footer/footer-services
+    include ../../blocks/components/backdrop/backdrop
+    include ../../blocks/modules/popups/popups
+
+block scripts
+  script(src="js/main.js")
+  script(src="js/vendor.js")

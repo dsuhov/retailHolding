@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import slick from 'slick-carousel';
-import picomodal from 'picomodal';
+import fancybox from "@fancyapps/fancybox";
 
 const gratitude = document.querySelector('.gratitude');
 
@@ -36,24 +36,17 @@ if (gratitude) {
     ]
   });
 
-  [...document.querySelectorAll('.gratitude__slider-item img')].forEach((el) => {
+  [...gratitude.querySelectorAll('.gratitude__slider-item img')].forEach((el) => {
     el.addEventListener('click', imgClickHandler);
   });
 
   // Actions on img cis clicked
   function imgClickHandler(evt) {
-    const targetImg = evt.target.dataset.srcset.replace('small', 'big'); 
-      
-    picomodal({
-      content: `<img style="width: 100%" src="${targetImg}">`,
-      overlayClose: true,
-      modalStyles: {
-        borderRadius: 0
-      },
-      
-    })
-    // .afterCreate(imgModalCreateHandler)
-    .afterClose(function (modal) { modal.destroy(); })
-    .show();
+    const targetImg = evt.target.dataset.srcset.replace('small', 'big');
+
+    $.fancybox.open({
+      src  :  `<img src="${targetImg}" />`,
+      type : 'inline',
+    });
   }
 }

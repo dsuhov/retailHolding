@@ -1,4 +1,5 @@
-import picomodal from 'picomodal';
+import $ from 'jquery';
+import fancybox from "@fancyapps/fancybox";
 
 const pageGratitudeBlock = document.querySelector('.page-gratitudes');
 
@@ -13,15 +14,9 @@ if (pageGratitudeBlock) {
     function imgClickHandler(evt) {
         const targetImg = evt.target.dataset.srcset.replace('small', 'big'); 
         
-        picomodal({
-            content: `<img style="width: 100%" src="${targetImg}">`,
-            overlayClose: true,
-            modalStyles: {
-                borderRadius: 0
-            },
-            
-        })
-        .afterClose(function (modal) { modal.destroy(); })
-        .show();
+        $.fancybox.open({
+            src  :  `<img src="${targetImg}" />`,
+            type : 'inline',
+        });
     }
 }
