@@ -13,6 +13,7 @@ if (document.querySelector(".popup-lazy-img")) {
   const datePickerEl = document.querySelector('.popup-2__date-picker input[name="datepicker"]');
   if (datePickerEl) {
     datePickerEl.disabled = true;
+    datePickerEl.style.display = "none";
     const isChooseDateEl = document.querySelectorAll('.popup-2__bind-method .input-checkbox__input');
 
     isChooseDateEl[1].addEventListener('change', evt => {
@@ -21,9 +22,11 @@ if (document.querySelector(".popup-lazy-img")) {
       if (isChecked) {
         datePickerEl.disabled = false;
         isChooseDateEl[0].checked = false;
+        datePickerEl.style.display = "block";
       } else {
         datePickerEl.disabled = true;
         isChooseDateEl[0].checked = true;
+        datePickerEl.style.display = "none";
       }
     });
 

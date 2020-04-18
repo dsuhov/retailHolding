@@ -1,7 +1,11 @@
 mixin filter(filter_data)
   .filter
-    each item in filter_data
+    each item, i in filter_data
       .filter__col
-        button(type="button" name="filter_btn" data-filter-value=""+item[0]).filter__btn= item[0]
-        if item[1]
-          button(type="button" name="filter_btn" data-filter-value=""+item[1]).filter__btn= item[1]
+        if i === 0
+          button(type="button" name="filter_btn" data-filter-value="Все").filter__btn.filter__btn--active Все
+          button(type="button" name="filter_btn" data-filter-value=""+item[0]).filter__btn= item[0]
+        else
+          button(type="button" name="filter_btn" data-filter-value=""+item[0]).filter__btn= item[0]
+          if item[1]
+            button(type="button" name="filter_btn" data-filter-value=""+item[0]).filter__btn= item[1]

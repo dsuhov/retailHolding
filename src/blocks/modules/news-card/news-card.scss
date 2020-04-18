@@ -1,5 +1,6 @@
 .news-card {
   display: flex;
+  text-decoration: none;
 
   @include image-adaptive(200, 142);
 

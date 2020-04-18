@@ -53,13 +53,14 @@
       top: 50%;
       transform: translateY(-5px);
       background-color: #E6E6E6;
+      
     }
   }
 
   
 
   &__input:checked + &__label::before {
-    background-color: #0075FF;
+    background: #E6E6E6 url('../img/general/check.svg') center / 10px 8px no-repeat;
   }
 }
 

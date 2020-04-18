@@ -8,7 +8,7 @@ mixin image-adaptive(img_name, alt)
     .image-adaptive__wrapper
       img(
         src="img/general/preloader.gif" 
-        data-srcset=`img/general/${img_name}.jpg 1x, img/general/${img_name}_2x.jpg 2x` alt=""+alt
+        data-srcset=`img/general/${img_name}.jpg` alt=""+alt
       ).image-adaptive__img.lazy-img-simple
 
 mixin image-noll(img_name, alt)

@@ -36,6 +36,27 @@
     }
 }
 
+@mixin image-moll($width, $height) {
+    .image {
+        width: 100%;
+        
+        &__picture {
+            display: block;
+            position: relative;
+            width: 100%;
+            padding-top: ($height/$width)*100%;
+        }
+        
+        &__img {
+            width: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
 @mixin image-adaptive($width, $height) {
     .image-adaptive {
         width: 100%;

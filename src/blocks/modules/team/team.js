@@ -25,7 +25,6 @@ function tbItemClickHandleer(evt) {
   });
   item.classList.add('team__person-item--active');
   var perside = teamBlock.querySelector('.team__person-side');
-  var webpSet = item.querySelector('picture source').dataset.srcset;
   var picSet = item.querySelector('picture img').dataset.srcset;
   var name = item.querySelector('.team__person-item-name').textContent;
   var charge = item.querySelector('.team__person-item-charge').textContent;
@@ -35,7 +34,7 @@ function tbItemClickHandleer(evt) {
   <div class="team__person-side-content">
     <div class="team__person-side-pic">
           <div class="image-adaptive">
-            <img style="width: 100%" class="image-adaptive__img lazy-img-simple" src="${picSet.split(', ')[0]}" alt="Иван Иванов">
+            <img style="width: 100%" class="image-adaptive__img lazy-img-simple" src="${picSet}" alt="Иван Иванов">
           </div>
     </div>
     <div class="team__person-side-name">${name}</div>

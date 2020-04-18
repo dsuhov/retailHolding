@@ -1,13 +1,7 @@
 .header.header-main {
   background-color: #1a1b1d;
 
-  &.no-webp {
-    background: url('../img/general/header-main-bg.jpg') center / cover no-repeat;
-  }
-
-  &.webp {
-    background: url('../img/general/header-main-bg.webp') center / cover no-repeat;
-  }
+  background: url('../img/general/header-main-bg.jpg') center / cover no-repeat;
 }
 
 .header-cards-wrapper {

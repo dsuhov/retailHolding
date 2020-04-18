@@ -100,10 +100,6 @@
 
     display: inline-flex;
     align-items: center;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   &__download-icon {
@@ -148,5 +144,11 @@
         display: inline-block;
       }
     }
+  }
+
+  &__btn button {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
   }
 }

@@ -95,7 +95,7 @@
 
     @media (max-width: 620px) {
       display: block;
-      @include image(460, 310);
+      @include image-moll(460, 310);
       margin-bottom: 20px;
     }
   }
@@ -104,7 +104,7 @@
     width: 100%;
     margin-bottom: 10px;
 
-    @include image(460, 310);
+    @include image-moll(460, 310);
   }
 
   &__images-line {
@@ -117,6 +117,6 @@
     width: (150/460)*100%;
     flex: 0 0 (150/460)*100%;
 
-    @include image(150, 100);
+    @include image-moll(150, 100);
   }
 }

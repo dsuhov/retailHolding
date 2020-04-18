@@ -6,21 +6,37 @@
   &.header-card-1 {
     border-bottom: 5px solid #265EAA;
     background: url('../img/general/header-card-bg-1.jpg') center bottom / 100% auto no-repeat;
+
+    &:hover .header-card__border {
+      border-color: #265EAA;
+    }
   }
 
   &.header-card-2 {
     border-bottom: 5px solid #85BE40;
     background: url('../img/general/header-card-bg-2.jpg') center bottom / 100% auto no-repeat;
+
+    &:hover .header-card__border {
+      border-color: #85BE40;
+    }
   }
 
   &.header-card-3 {
     border-bottom: 5px solid #F3942B;
     background: url('../img/general/header-card-bg-3.jpg') center bottom / 100% auto no-repeat;
+
+    &:hover .header-card__border {
+      border-color: #F3942B;
+    }
   }
 
   &.header-card-4 {
     border-bottom: 5px solid #232A55;
     background: url('../img/general/header-card-bg-1.jpg') center bottom / 100% auto no-repeat;
+
+    &:hover .header-card__border {
+      border-color: #232A55;
+    }
   }
 
   &__inner {

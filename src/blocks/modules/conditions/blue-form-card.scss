@@ -40,6 +40,14 @@
     color: #1768C8;
     height: 56px;
     margin-bottom: 15px;
+
+    transition-property: background-color, color;
+    transition: 0.2s linear;
+
+    &:hover {
+      background-color: rgb(208, 228, 252);
+      // color: #fff;
+    }
   }
 
   &__accept-conf {

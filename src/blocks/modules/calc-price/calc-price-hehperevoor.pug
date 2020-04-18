@@ -1,0 +1,65 @@
+include ../../components/form-elements/form-elements
+include ../../components/buttons/main-btn
+
+include calc-price-data-tehperevoor
+
+.calc-price(class="lazy-bg bg-img" data-lbg='img/general/calc_main_bg.jpg')
+  .container
+    h2.calc-price__title Расчет стоимости
+    .calc-price__subtitle услуг Retail Building
+    form(action="" method="post").calc-price__form
+      .calc-price__left
+        .calc-price__col
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Тип объекта
+            .calc-price__field.calc-price__field--175
+              +select(calc_price_data_tehperevoor.typeOfObject)
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Площадь объекта
+            .calc-price__field.calc-price__field--175
+              +range-field(calc_price_data_tehperevoor.area)
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Где находится объект?
+            .calc-price__field.calc-price__field--175
+              +text-field(calc_price_data_tehperevoor.location)
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Когда надо сдать объект?
+            .calc-price__field.calc-price__field--175
+              +date-input(calc_price_data_tehperevoor.when)
+        .calc-price__col.calc-price__col--flex
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Какие услуги Вам нужны?
+            each val in calc_price_data_tehperevoor.whatServices
+              .calc-price__field
+                +checkbox(val)
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Проектирование:
+            each val in calc_price_data_tehperevoor.proecting
+              .calc-price__field
+                +checkbox(val)
+          button(type="button" id="ask_specialist").calc-price__ask_spec Задать вопрос специалисту
+        .calc-price__col.calc-price__col--file
+          .calc-price__file-title Прикрепите проектную <br>документацию если есть
+          .calc-price__file
+            label.calc-price__file-label
+              input(type="file" class="input-file__input" name="userfile" multiple).calc-price__file-input
+              .calc-price__file-label-line
+                .calc-price__file-label-pic
+                  +icon('upload')
+                .calc-price__file-label-text Загрузите файлы
+            .calc-price__file-info
+      .calc-price__right(class="calc-price__field-block-media")
+        .calc-price__r-field-block
+          .calc-price__r-field-title Куда прислать <br>предварительную смету?
+          .calc-price__field.calc-price__field--250
+            +email('email', 'Введите почту')
+        .calc-price__r-field-block
+          .calc-price__r-field-title Как с Вами связаться
+          .calc-price__field.calc-price__field--250
+            +email('phone', 'Введите номер телефона')
+        .calc-price__btn
+          +main-btn-sbm('56', 'Получить смету', 'calc-price-btn')
+        .calc-price__accept-conf
+          include ../accept-conf/accept-conf
+      +main-btn('56', 'Далее', 'calc-price-media-btn')
+      button(type="button" id="ask_specialist-2").calc-price__ask_spec.calc-price__ask_spec--media Задать вопрос специалисту

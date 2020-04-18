@@ -4,9 +4,11 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 html {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Gilroy', 'Trebuchet MS', sans-serif;
+    font-weight: 400; 
     font-size: $base-font-size;
     height: 100%;
+    // letter-spacing: 0.05em;
 
     @media (max-width: 768px) {
         font-size: 50%;
@@ -174,7 +176,9 @@ input[type="number"] {
 }
 
 .fancybox-content {
-    padding: 0 !important;
+    padding: 5px !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 4px !important;
 
     @media (max-width: 900px) {
         // padding: 0 15px !important;

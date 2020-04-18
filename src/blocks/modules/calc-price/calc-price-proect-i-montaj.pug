@@ -1,0 +1,53 @@
+include ../../components/form-elements/form-elements
+include ../../components/buttons/main-btn
+
+include calc-price-data
+
+.calc-price(class="lazy-bg bg-img" data-lbg='img/general/calc_main_bg.jpg')
+  .container
+    h2.calc-price__title Расчет стоимости
+    .calc-price__subtitle услуг Retail Building
+    form(action="" method="post").calc-price__form
+      .calc-price__left
+        .calc-price__col
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Тип объекта
+            .calc-price__field.calc-price__field--175
+              +select(calcPriceData.typeOfObject)
+            .calc-price__field.calc-price__field--175
+              +select(calcPriceData.typeOfObject2)
+            .calc-price__field
+              +checkbox(calcPriceData.typeOfObject.chbox)
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Площадь объекта
+            .calc-price__field.calc-price__field--175
+              +range-field(calcPriceData.area)
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Где находится объект?
+            .calc-price__field.calc-price__field--175
+              +text-field(calcPriceData.location)
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Когда надо сдать объект?
+            .calc-price__field.calc-price__field--175
+              +date-input(calcPriceData.when)
+        .calc-price__col.calc-price__col--flex
+          .calc-price__field-block(class="calc-price__field-block-media")
+            .calc-price__field-title Какие работы нужны?
+            each val in calcPriceData.whatWorks
+              .calc-price__field
+                +checkbox(val)
+      .calc-price__right(class="calc-price__field-block-media")
+        .calc-price__r-field-block
+          .calc-price__r-field-title Куда прислать <br>предварительную смету?
+          .calc-price__field.calc-price__field--250
+            +email('email', 'Введите почту')
+        .calc-price__r-field-block
+          .calc-price__r-field-title Как с Вами связаться
+          .calc-price__field.calc-price__field--250
+            +email('phone', 'Введите номер телефона')
+        .calc-price__btn
+          +main-btn-sbm('56', 'Получить смету', 'calc-price-btn')
+        .calc-price__accept-conf
+          include ../accept-conf/accept-conf
+      +main-btn('56', 'Далее', 'calc-price-media-btn')
+      button(type="button" id="ask_specialist-2").calc-price__ask_spec.calc-price__ask_spec--media Задать вопрос специалисту

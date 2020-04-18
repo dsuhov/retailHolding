@@ -5,7 +5,7 @@
         .fo-filter__line
           .fo-filter__prefix Коммерческие:
           .fo-filter__btns
-            button(type="button").fo-filter__btn Розничные магазины
+            button(type="button").fo-filter__btn.fo-filter__btn--active Розничные магазины
             button(type="button").fo-filter__btn Финансовые организации
             button(type="button").fo-filter__btn Кафе и рестораны
             button(type="button").fo-filter__btn Заведения сферы услуг
@@ -18,6 +18,10 @@
             button(type="button").fo-filter__btn Фабрики и заводы
             button(type="button").fo-filter__btn Электространции
   .filtered-objects__objects
+    .filtered-objects__object
+      include ../object-card/object-card-1
+    .filtered-objects__object
+      include ../object-card/object-card-2
     .filtered-objects__object
       include ../object-card/object-card-1
     .filtered-objects__object
