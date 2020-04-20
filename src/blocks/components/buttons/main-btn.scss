@@ -2,7 +2,8 @@
   display: block;
   text-decoration: none;
   background-color: #0075FF;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   font-size: 12px;
   line-height: 14px;
   color: #fff;
@@ -32,7 +33,7 @@
 
     &__h56 {
       padding: 2.1rem 0;
-      font-weight: bold;
+      font-weight: 600;
       font-size: 16px;
       line-height: 19px;
     }

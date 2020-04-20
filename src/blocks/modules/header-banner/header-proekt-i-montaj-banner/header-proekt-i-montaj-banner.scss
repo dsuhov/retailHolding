@@ -36,7 +36,7 @@
     }
 
     span:first-child {
-      font-weight: bold;
+      font-weight: 600;
       font-size: 48px;
       line-height: 56px;
     }
@@ -57,7 +57,7 @@
   }
 
   &__title {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 48px;
     line-height: 56px;
     margin-bottom: 2.6rem;
@@ -155,7 +155,7 @@
     color: #383838;
 
     b {
-      font-weight: bold;
+      font-weight: 600;
     }
   }
 }

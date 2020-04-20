@@ -43,11 +43,11 @@
 
     span {
       display: block;
-      font-weight: bold;
+      font-weight: 600;
     }
 
     span:first-child {
-      font-weight: bold;
+      font-weight: 600;
       font-size: 50px;
       line-height: 58px;
       margin-bottom: 10px;
@@ -88,7 +88,7 @@
     }
 
     span:first-child {
-      font-weight: bold;
+      font-weight: 600;
       font-size: 48px;
       line-height: 56px;
     }
@@ -149,7 +149,7 @@
 .similar-objects {
 
   &__title {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 4.8rem;
     line-height: 5.6rem;
     margin-bottom: 5rem;

@@ -61,7 +61,7 @@
   }
 
   &__prefix {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
     line-height: 16px;
     margin-right: 3rem;
@@ -108,7 +108,7 @@
 
     &:hover, &.fo-filter__btn--active {
       background: #0075FF;
-      font-weight: bold;
+      font-weight: 600;
       color: #fff;
     }
 

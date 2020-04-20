@@ -45,7 +45,7 @@
   &__title {
     font-size: adaptFont(20, 1920); // 30px
     line-height: adaptFont(5, 1920); // 35px
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 5px;
     max-width: 90%;
 
@@ -58,7 +58,7 @@
   &__location {
     font-size: adaptFont(4, 1920); // 14px
     line-height: 1.142em; // 16px
-    font-weight: bold;
+    font-weight: 600;
     color: rgba(255, 255, 255, 0.5);
     
     @media (max-width: 540px) {
@@ -86,7 +86,7 @@
 
     span:first-child {
       display: block;
-      font-weight: bold;
+      font-weight: 600;
       font-size:  adaptFont(38, 1920);// 48px;
       line-height: adaptFont(8, 1920); 
       

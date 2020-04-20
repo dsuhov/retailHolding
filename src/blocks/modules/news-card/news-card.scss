@@ -36,6 +36,7 @@
     line-height: 19px;
     color: #0075FF;
     margin-bottom: 5px;
+    font-weight: 500;
   }
 
   &__date, &__text {
@@ -50,5 +51,6 @@
 
   &__text {
     color: #393939;
+    font-weight: 500;
   }
 }
